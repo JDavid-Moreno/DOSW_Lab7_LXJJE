@@ -1,4 +1,4 @@
-package edu.eci.dosw.TechCup;
+package edu.eci.dosw.TechCup.model;
 
 import java.time.LocalDate;
 

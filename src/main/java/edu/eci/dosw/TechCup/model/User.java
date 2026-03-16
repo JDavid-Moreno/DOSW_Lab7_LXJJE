@@ -1,4 +1,4 @@
-package edu.eci.dosw.TechCup;
+package edu.eci.dosw.TechCup.model;
 
 import java.time.LocalDate;
 
@@ -79,6 +79,9 @@ public class User {
     }
     public Program getProgram() {
         return program;
+    }
+    public void setId(Long id) {
+        this.id = id;
     }
     public void setProfilePicture(File profilePicture) {
         this.profilePicture = profilePicture;

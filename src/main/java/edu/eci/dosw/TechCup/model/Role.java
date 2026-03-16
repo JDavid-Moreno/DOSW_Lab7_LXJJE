@@ -1,4 +1,4 @@
-package edu.eci.dosw.TechCup;
+package edu.eci.dosw.TechCup.model;
 
 public enum Role {
     ORGANIZADOR, ADMINISTRADOR, ARBITRO, ESTUDIANTE, GRADUADO, PROFESOR, PERSONAL_ADMINISTRATIVO, FAMILIAR

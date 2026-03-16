@@ -1,5 +1,7 @@
 package edu.eci.dosw.TechCup;
 
+import edu.eci.dosw.TechCup.model.*;
+import edu.eci.dosw.TechCup.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

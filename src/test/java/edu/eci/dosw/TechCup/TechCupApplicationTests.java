@@ -18,11 +18,11 @@ class TechCupApplicationTests {
 	@Test
 	void testUserCreation()
 	{
-		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", Role.ESTUDIANTE, LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
+		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
 		u.setIdentifiacion(IdentificationType.CC, "123456789");
 		assertEquals("Roa Hernandez", u.getLastName());
 		assertEquals("Juan David", u.getName());
-		assertEquals("juan.roa-h@mail.escuelaing.edu.co", u.getMail());
+		assertEquals("juan.roa-h@mail.escuelaing.edu.co", u.getEmail());
 		assertEquals("123456789", u.getIdentification());
 		assertEquals(LocalDate.of(2005,3,22), u.getBirthDate());
 	}
@@ -37,7 +37,7 @@ class TechCupApplicationTests {
 	}
 	@Test
 	void testBuscarUsuarioPorCorreo(){
-		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", Role.ESTUDIANTE, LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
+		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
 		UserService su = new UserService();
 		//falta setear repo usuario
 		User busqueda = su.searchUserByEmail("juan.roa-h@mail.escuelaing.edu.co");
@@ -45,7 +45,7 @@ class TechCupApplicationTests {
 	}
 	@Test
 	void testBuscarUsuarioPorIdentifiacion(){
-		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", Role.ESTUDIANTE, LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
+		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
 		u.setIdentifiacion(IdentificationType.CC, "123456789");
 		UserService su = new UserService();
 		//falta setear repo usuario
@@ -60,7 +60,7 @@ class TechCupApplicationTests {
 	}
 	@Test
 	void testObtenerPerfilDeportivoPorCorreoUsuario(){
-		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", Role.ESTUDIANTE, LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
+		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
 		PerfilDeportivo pd = new PerfilDeportivo(Position.PORTERO, "1");
 		u.setPerfilDeportivo(pd);
 		UserService su = new UserService();
@@ -69,7 +69,7 @@ class TechCupApplicationTests {
 	}
 	@Test
 	void testObtenerPerfilDeportivoPorUsuario(){
-		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", Role.ESTUDIANTE, LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
+		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
 		PerfilDeportivo pd = new PerfilDeportivo(Position.PORTERO, "1");
 		u.setPerfilDeportivo(pd);
 		UserService su = new UserService();

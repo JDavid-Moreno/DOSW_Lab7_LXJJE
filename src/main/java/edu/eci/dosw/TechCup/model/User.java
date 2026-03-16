@@ -5,8 +5,8 @@ import java.time.LocalDate;
 
 public class User {
     private Long id;
-    private String mail;
-    private String passwdHash;
+    private String email;
+    private String password;
     private String name;
     private String lastName;
     private Role role;
@@ -19,39 +19,36 @@ public class User {
     private Position predefinedPosition;
     private String predefinedDorsal;
     private File profilePicture;
+    private UserState state;
     public User() {}
-    public User(String correo, String passwdCifrado, String nombres, String apellidos, Role rol, LocalDate birthDate, Program program) {
-        this.mail = correo;
-        this.passwdHash = passwdCifrado;
+    public User(String correo, String passwdCifrado, String nombres, String apellidos, LocalDate birthDate, Program program) {
+        this.email = correo;
+        this.password = passwdCifrado;
         this.name = nombres;
         this.lastName = apellidos;
-        this.role = rol;
         this.birthDate = birthDate;
         this.program = program;
+        this.state = UserState.ACTIVE;
     }
     public void setPassword(String passwdCifrado) {
-        this.passwdHash = passwdCifrado;
+        this.password = passwdCifrado;
     }
     public void setGender(Gender gender) {
         this.gender = gender;
     }
     public void setSemester(Integer semester) {
-        if (!role.equals(Role.ESTUDIANTE)) {
             this.semester = semester;
-        } else {
-            throw new IllegalArgumentException("Solo los estudiantes tienen semester.");
-        }
     }
     public void setIdentifiacion(IdentificationType tipoId, String identificacion) {
         this.identificationType = tipoId;
         this.identification = identificacion;
     }
 
-    public String getMail() {
-        return mail;
+    public String getEmail() {
+        return email;
     }
-    public String getPasswdHash() {
-        return passwdHash;
+    public String getPassword() {
+        return password;
     }
     public String getName() {
         return name;
@@ -61,6 +58,9 @@ public class User {
     }
     public Role getRole() {
         return role;
+    }
+    public void setRole(Role role) {
+        this.role = role;
     }
     public LocalDate getBirthDate() {
         return birthDate;
@@ -100,5 +100,11 @@ public class User {
     }
     public void setPredefinedDorsal(String predefinedDorsal) {
         this.predefinedDorsal = predefinedDorsal;
+    }
+    public UserState getState() {
+        return state;
+    }
+    public void setState(UserState state) {
+        this.state = state;
     }
 }

@@ -26,6 +26,11 @@ public class UserService {
         return u.orElse(null);
     }
 
+    public Optional<User> searchUserById(Long id) {
+        Optional<User> u = userRepository.findById(id);
+        return Optional.ofNullable(u.orElse(null));
+    }
+
     public User searchUserByIdentification(String identification) {
         User u = null;
         return u;

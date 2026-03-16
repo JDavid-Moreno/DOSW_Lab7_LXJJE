@@ -8,9 +8,13 @@ import edu.eci.dosw.TechCup.exception.AuthenticationException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 public class AuthenticationService {
     private PasswordEncoder encoder;
     private UserRepository userRepository;
+    private static final AtomicLong idGenerator = new AtomicLong(1);
+
     public AuthenticationService(PasswordEncoder encoder, UserRepository userRepository) {
         this.encoder = encoder;
         this.userRepository = userRepository;
@@ -30,11 +34,12 @@ public class AuthenticationService {
     };
     @Transactional
     public void register(User user) {
-        String mail = user.getEmail();
+        String email = user.getEmail();
         String password = user.getPassword();
-        if (userRepository.existsByEmail(mail)){
+        if (userRepository.existsByEmail(email)){
             throw new AuthenticationException("Email already in use.");
         }
+        user.setId(idGenerator.getAndIncrement());
         user.setPassword(encoder.encode(password));
         user.setRole(Role.JUGADOR);
         user.setState(UserState.ACTIVE);

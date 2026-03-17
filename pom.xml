@@ -42,12 +42,6 @@
 		</dependency>
 
 		<dependency>
-    			<groupId>org.sonarsource.sonarqube</groupId>
-    			<artifactId>sonar-core</artifactId>
-    			<version>26.3.0.120487</version>
-		</dependency>
-
-		<dependency>
         		<groupId>junit</groupId>
         		<artifactId>junit</artifactId>
         		<version>4.13.2</version>

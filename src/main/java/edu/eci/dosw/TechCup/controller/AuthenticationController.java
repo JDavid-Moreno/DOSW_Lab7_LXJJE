@@ -16,7 +16,10 @@ public class AuthenticationController {
     private AuthenticationService authenticationService;
 
     public AuthenticationController(){
-        this.authenticationService = new AuthenticationService(new BCryptPasswordEncoder(12));
+        this.authenticationService = new AuthenticationService();
+    }
+    public AuthenticationController(AuthenticationService authenticationService) {
+        this.authenticationService = authenticationService;
     }
     @PostMapping("/register")
     public ResponseEntity<Void> register(@RequestBody User user){

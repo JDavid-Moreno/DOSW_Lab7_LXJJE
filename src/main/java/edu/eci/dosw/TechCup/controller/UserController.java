@@ -6,8 +6,6 @@ import edu.eci.dosw.TechCup.model.UserState;
 import edu.eci.dosw.TechCup.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import javax.swing.plaf.nimbus.State;
 import java.util.Optional;
 
 @RestController
@@ -15,21 +13,22 @@ import java.util.Optional;
 public class UserController {
     private UserService userService;
 
-    public UserController(){
-        this.userService = new UserService();
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
+
     @GetMapping("/{id}")
     public ResponseEntity<User> get(@PathVariable Long id){
         //si se encuentra: 200 ok, si no: 404 not found
         Optional<User> user = userService.searchUserById(id);
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
-    @PatchMapping("/{id}/role")
+    @PutMapping("/{id}/role")
     public ResponseEntity<User> updateRole(@PathVariable Long id, @RequestBody Role role){
         userService.updateRole(id, role);
         return ResponseEntity.noContent().build();
     }
-    @PatchMapping("{id}/state")
+    @PutMapping("{id}/state")
     public ResponseEntity<User> updateState(@PathVariable Long id, @RequestBody UserState state){
         Optional<User> user = userService.searchUserById(id);
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());

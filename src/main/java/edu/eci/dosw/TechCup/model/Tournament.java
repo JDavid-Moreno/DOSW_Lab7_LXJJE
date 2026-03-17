@@ -1,6 +1,8 @@
 package edu.eci.dosw.TechCup.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Tournament {
     private Long id;
@@ -13,5 +15,12 @@ public class Tournament {
     private Integer numberTeams;
     private Float coast;
     private User captain;
-    public Tournament() {}
+    private List<Team> teams;
+    public Tournament() {
+        this.teams = new ArrayList<>();
+    }
+
+    public List<Team> getTeams() {
+        return teams;
+    }
 }

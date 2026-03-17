@@ -5,11 +5,13 @@ import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
 import edu.eci.dosw.TechCup.repository.UserRepository;
 import edu.eci.dosw.TechCup.exception.AuthenticationException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.concurrent.atomic.AtomicLong;
-
+@Service
 public class AuthenticationService {
     private PasswordEncoder encoder;
     private UserRepository userRepository;
@@ -21,6 +23,9 @@ public class AuthenticationService {
     };
     public AuthenticationService(PasswordEncoder encoder) {
         this.encoder = encoder;
+    }
+    public AuthenticationService() {
+        encoder = new BCryptPasswordEncoder(12);
     }
     @Transactional
     public void login(User user){

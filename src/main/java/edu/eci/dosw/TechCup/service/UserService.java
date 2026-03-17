@@ -6,10 +6,11 @@ import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
 import edu.eci.dosw.TechCup.repository.UserRepository;
 import edu.eci.dosw.TechCup.exception.AuthenticationException;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
-
+@Service
 public class UserService {
 
     private UserRepository userRepository;
@@ -17,21 +18,18 @@ public class UserService {
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-    public UserService(){}
+
     @Transactional
-    public User searchUserByEmail(String mail) {
-        Optional<User> u = userRepository.findByEmail(mail);
-        return u.orElse(null);
+    public Optional<User> searchUserByEmail(String mail) {
+        return userRepository.findByEmail(mail);
     }
     @Transactional
     public Optional<User> searchUserById(Long id) {
-        Optional<User> u = userRepository.findById(id);
-        return Optional.ofNullable(u.orElse(null));
+            return userRepository.findById(id);
     }
     @Transactional
-    public User searchUserByIdentification(String identification) {
-        User u = null;
-        return u;
+    public Optional<User> searchUserByIdentification(String identification) {
+        return userRepository.findByIdentification(identification);
     }
     @Transactional
     public void updateRole(Long id, Role role) {
@@ -53,15 +51,4 @@ public class UserService {
             throw new AuthenticationException("User does not exist");
         }
     }
-
-    public Team searchUserTeam(Long id){
-        Team e = null;
-        return e;
-    }
-    public Team searchUserTeam(String mail){
-        Team e = null;
-        return e;
-    }
-
-
 }

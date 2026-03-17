@@ -32,4 +32,9 @@ public class TournamentController {
         tournamentService.createTournament(tournament);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
+    @DeleteMapping("{id}")
+    public ResponseEntity<Void> deleteTournament(@PathVariable Long id) {
+        tournamentService.deleteTournament(id);
+        return ResponseEntity.noContent().build();
+    }
 }

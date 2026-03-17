@@ -24,12 +24,12 @@ public class TournamentController {
     }
     @GetMapping("{id}/teams")
     public ResponseEntity<List<Team>> getTournamentTeams(@PathVariable Long id) {
-        Optional<List<Team>> teams = tournamentService.searchTournamentTeams(id);
-        return teams.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+        List<Team> teams = tournamentService.searchTournamentTeams(id);
+        return ResponseEntity.ok(teams);
     }
     @PostMapping
-    public ResponseEntity<Void> createTournament(@RequestBody Tournament tournament) {
-        tournamentService.createTournament(tournament);
+    public ResponseEntity<Tournament> createTournament(@RequestBody Tournament tournament) {
+        Tournament created = tournamentService.createTournament(tournament);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
     @DeleteMapping("{id}")

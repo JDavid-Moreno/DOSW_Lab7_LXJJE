@@ -16,12 +16,17 @@ public class TournamentServiceTest implements TournamentService {
     }
 
     @Override
-    public Optional<List<Team>> searchTournamentTeams(Long id) {
+    public List<Team> searchTournamentTeams(Long id) {
         return Optional.empty();
     }
 
     @Override
-    public void createTournament(Tournament tournament) {
+    public Tournament createTournament(Tournament tournament) {
+
+    }
+
+    @Override
+    public void deleteTournament(Long id) {
 
     }
 }

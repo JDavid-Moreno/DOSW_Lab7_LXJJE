@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public interface TournamentService {
     Optional<Tournament> searchTournamentById(Long id);
-    Optional<List<Team>> searchTournamentTeams(Long id);
-    void createTournament(Tournament tournament);
+    List<Team> searchTournamentTeams(Long id);
+    Tournament createTournament(Tournament tournament);
     void deleteTournament(Long id);
 }

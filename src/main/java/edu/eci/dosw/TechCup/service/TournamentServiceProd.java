@@ -12,13 +12,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Service
 @Profile("prod")
 public class TournamentServiceProd implements TournamentService {
     private TournamentRepository tournamentRepository;
-    private static final AtomicLong idGenerator = new AtomicLong(1);
 
     public TournamentServiceProd(TournamentRepository tournamentRepository) {
         this.tournamentRepository = tournamentRepository;
@@ -28,15 +26,18 @@ public class TournamentServiceProd implements TournamentService {
         return tournamentRepository.findById(id);
     }
     @Transactional
-    public Optional<List<Team>> searchTournamentTeams(Long id){
+    public List<Team> searchTournamentTeams(Long id){
         Optional<Tournament> tournament = tournamentRepository.findById(id);
-        return Optional.ofNullable(tournament.get().getTeams());
+        if (tournament.isPresent()) {
+            return tournament.get().getTeams();
+        }
+        else
+            throw new EntityNotFoundException("Tournament not found");
     }
     @Transactional
-    public void createTournament(Tournament tournament) {
-        tournament.setId(idGenerator.getAndIncrement());
+    public Tournament createTournament(Tournament tournament) {
         tournament.setState(TournamentState.BORRADOR);
-        tournamentRepository.save(tournament);
+        return tournamentRepository.save(tournament);
     }
     @Transactional
     public void deleteTournament(Long id) {

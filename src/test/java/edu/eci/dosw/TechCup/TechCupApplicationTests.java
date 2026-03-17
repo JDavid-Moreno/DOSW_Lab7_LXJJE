@@ -1,8 +1,13 @@
 package edu.eci.dosw.TechCup;
 
+import edu.eci.dosw.TechCup.controller.AuthenticationController;
+import edu.eci.dosw.TechCup.controller.TournamentController;
+import edu.eci.dosw.TechCup.controller.UserController;
 import edu.eci.dosw.TechCup.model.*;
+import edu.eci.dosw.TechCup.service.UserService;
 import edu.eci.dosw.TechCup.service.UserServiceProd;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
@@ -13,6 +18,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 @ActiveProfiles("test")
 class TechCupApplicationTests {
+	@Autowired
+	UserController userController;
+	@Autowired
+	AuthenticationController authenticationController;
+	@Autowired
+	TournamentController tournamentController;
 
 	@Test
 	void contextLoads() {

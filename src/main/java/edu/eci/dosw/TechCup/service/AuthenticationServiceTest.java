@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 @Profile("test")
 public class AuthenticationServiceTest implements AuthenticationService {
     @Override
-    public void login(User user) {
+    public User login(String email, String password) {
 
     }
 
     @Override
-    public void register(User user) {
+    public User register(User user) {
 
     }
 }

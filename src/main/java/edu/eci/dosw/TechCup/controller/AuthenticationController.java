@@ -2,7 +2,6 @@ package edu.eci.dosw.TechCup.controller;
 
 import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.service.AuthenticationService;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,14 +17,14 @@ public class AuthenticationController {
         this.authenticationService = authenticationService;
     }
     @PostMapping("/register")
-    public ResponseEntity<Void> register(@RequestBody User user){
-        authenticationService.register(user);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+    public ResponseEntity<User> register(@RequestBody User user){
+        User created = authenticationService.register(user);
+        return ResponseEntity.ok(created);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Void> login(@RequestBody User user){
-        authenticationService.login(user);
-        return ResponseEntity.ok().build();
+    public ResponseEntity<User> login(@RequestBody User user){
+        User logged = authenticationService.login(user.getEmail(), user.getPassword());
+        return ResponseEntity.ok(logged);
     }
 }

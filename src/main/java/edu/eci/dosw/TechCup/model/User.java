@@ -1,9 +1,15 @@
 package edu.eci.dosw.TechCup.model;
 
+import jakarta.persistence.*;
+
+
 import java.time.LocalDate;
 
-
+@Entity
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String email;
     private String password;
@@ -18,6 +24,8 @@ public class User {
     private Program program;
     private Position predefinedPosition;
     private String predefinedDorsal;
+    @OneToOne
+    @JoinColumn(name = "profile_picture_id")
     private File profilePicture;
     private UserState state;
     public User() {}

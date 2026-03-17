@@ -1,9 +1,14 @@
 package edu.eci.dosw.TechCup.model;
 
-import java.time.LocalDate;
+import jakarta.persistence.*;
 
+import java.time.LocalDate;
+@Entity
 public class File {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Lob
     private byte[] bytes;
     private String mime;
     private LocalDate lastMod;

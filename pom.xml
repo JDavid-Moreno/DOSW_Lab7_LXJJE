@@ -40,6 +40,19 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+    			<groupId>org.sonarsource.sonarqube</groupId>
+    			<artifactId>sonar-core</artifactId>
+    			<version>26.3.0.120487</version>
+		</dependency>
+
+		<dependency>
+        		<groupId>junit</groupId>
+        		<artifactId>junit</artifactId>
+        		<version>4.13.2</version>
+        		<scope>test</scope>
+    		</dependency>
 	</dependencies>
 
 	<build>
@@ -48,6 +61,70 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+            			<groupId>org.apache.maven.plugins</groupId>
+            			<artifactId>maven-surefire-plugin</artifactId>
+            			<version>3.5.5</version>
+            			<dependencies>
+                			<dependency>
+                    				<groupId>org.junit.vintage</groupId>
+                    				<artifactId>junit-vintage-engine</artifactId>
+                    				<version>5.9.1</version>
+                			</dependency>
+            			</dependencies>
+        		</plugin>
+
+			<plugin>
+        			<groupId>org.sonarsource.scanner.maven</groupId>
+        			<artifactId>sonar-maven-plugin</artifactId>
+        			<version>yourPluginVersion</version>
+      			</plugin>
+
+			 <plugin>
+        			<groupId>org.jacoco</groupId>
+        			<artifactId>jacoco-maven-plugin</artifactId>
+        			<version>0.8.12</version>
+        			<executions>
+          				<execution>
+            					<goals>
+              						<goal>prepare-agent</goal>
+            					</goals>
+          				</execution>
+          				<execution>
+            					<id>report</id>
+            					<phase>test</phase>
+            					<goals>
+              						<goal>report</goal>
+            					</goals>
+            					<configuration>
+              						<excludes>
+                						<exclude>/configurators/</exclude>
+              						</excludes>
+            					</configuration>
+          				</execution>
+          				<execution>
+            					<id>jacoco-check</id>
+            					<goals>
+             	 					<goal>check</goal>
+            					</goals>
+            					<configuration>
+              						<rules>
+                						<rule>
+                  							<element>PACKAGE</element>
+                  							<limits>
+                    								<limit>
+                      									<counter>CLASS</counter>
+                      									<value>COVEREDRATIO</value>
+                      									<minimum>0.85</minimum>
+                    								</limit>
+                  							</limits>
+                						</rule>
+              						</rules>
+            					</configuration>
+          				</execution>
+        			</executions>
+      			</plugin>
 		</plugins>
 	</build>
 

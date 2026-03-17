@@ -4,7 +4,6 @@ import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.service.AuthenticationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,9 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthenticationController {
     private AuthenticationService authenticationService;
 
-    public AuthenticationController(){
-        this.authenticationService = new AuthenticationService();
-    }
     public AuthenticationController(AuthenticationService authenticationService) {
         this.authenticationService = authenticationService;
     }

@@ -30,8 +30,8 @@ public class UserController {
     }
     @PutMapping("{id}/state")
     public ResponseEntity<User> updateState(@PathVariable Long id, @RequestBody UserState state){
-        Optional<User> user = userService.searchUserById(id);
-        return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+        userService.updateState(id,state);
+        return ResponseEntity.noContent().build();
     }
 
 }

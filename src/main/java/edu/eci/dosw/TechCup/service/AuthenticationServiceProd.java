@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 public class AuthenticationServiceProd implements AuthenticationService {
     private PasswordEncoder encoder;
     private UserRepository userRepository;
-    private static final Logger logger = LoggerFactory.getLogger(NombreClase.class);
+    private static final Logger log = LoggerFactory.getLogger(AuthenticationServiceProd.class);
 
     public AuthenticationServiceProd(PasswordEncoder encoder, UserRepository userRepository) {
         this.encoder = encoder;

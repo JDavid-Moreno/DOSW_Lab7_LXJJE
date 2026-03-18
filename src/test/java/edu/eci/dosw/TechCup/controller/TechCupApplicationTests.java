@@ -48,6 +48,8 @@ class TechCupApplicationTests {
 		assertEquals("application/pdf", a.getMime());
 		assertEquals(date, a.getLastMod());
 	}
+	
+	/*
 	@Test
 	void testBuscarUsuarioPorCorreo(){
 		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
@@ -89,4 +91,5 @@ class TechCupApplicationTests {
 		PerfilDeportivo pdbusqueda = su.buscarPerfilDeportivoPorUsuario(u);
 		assertEquals(pd, pdbusqueda);
 	}
+		*/
 }

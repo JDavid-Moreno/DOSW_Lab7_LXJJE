@@ -1,5 +1,6 @@
-package edu.eci.dosw.TechCup;
+package edu.eci.dosw.TechCup.controller;
 
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.service.AuthenticationService;
@@ -15,8 +16,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(AuthenticationController.class)
+@AutoConfigureMockMvc(addFilters = false)
 class AuthenticationControllerTest {
-
     @Autowired
     private MockMvc mockMvc;
 

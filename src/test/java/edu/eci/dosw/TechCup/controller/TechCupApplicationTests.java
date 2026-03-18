@@ -1,4 +1,4 @@
-package edu.eci.dosw.TechCup;
+package edu.eci.dosw.TechCup.controller;
 
 import edu.eci.dosw.TechCup.controller.AuthenticationController;
 import edu.eci.dosw.TechCup.controller.TournamentController;

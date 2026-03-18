@@ -48,6 +48,11 @@
         	<artifactId>spring-boot-starter-test</artifactId>
         	<scope>test</scope>
     	</dependency>
+	
+	<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-security</artifactId>
+	</dependency>	
 
 	</dependencies>
 
@@ -62,13 +67,6 @@
             			<groupId>org.apache.maven.plugins</groupId>
             			<artifactId>maven-surefire-plugin</artifactId>
             			<version>3.5.5</version>
-            			<dependencies>
-                			<dependency>
-                    				<groupId>org.junit.vintage</groupId>
-                    				<artifactId>junit-vintage-engine</artifactId>
-                    				<version>5.9.1</version>
-                			</dependency>
-            			</dependencies>
         		</plugin>
 
 			 <plugin>

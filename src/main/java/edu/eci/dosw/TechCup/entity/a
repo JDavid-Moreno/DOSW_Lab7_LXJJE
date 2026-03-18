@@ -1,0 +1,24 @@
+Parte A
+-paso 1 diagrama er:Juan M
+-paso 2 pom:Juan M
+-paso 3 entidades identificar:JDR
+paso 4 entidades:JDR
+paso 5 relaciones: JDR
+paso 6 repositorioJPA:JDR
+paso 7 bd:K
+paso 8 configurar bd:K
+paso 9: mappers:JDR
+paso 10 servicio:JDR
+paso 11 controladores:JDR
+paso 12 h2:LE
+paso 13 pruebas h2:LE
+paso 14 ver pruebas:LE
+PARTE B
+-repo: juan
+paso 16 estructura: LE
+paso 17 configurar mongo:LE
+paso 18 document mongo:LE
+paso 19 repo Mongo:LE
+paso 20 servicio Mongo:LE
+pso 21 controlador Mongo:LE
+paso 22 probar: LE

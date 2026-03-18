@@ -84,6 +84,46 @@ mvn spring-boot:run
 http://localhost:8080/swagger-ui.html
 ---
 
+## Preguntas 
+
+1. ¿Para qué sirve el paquete Controller en la estructura Spring Boot?
+   
+    R/ El paquete Controller se encarga de manejar las solicitudes HTTP del cliente. Actúa como intermediario entre el usuario y la lógica del sistema, recibiendo                  peticiones, procesándolas y devolviendo respuestas (generalmente en formato JSON o vistas). Utiliza anotaciones como @RestController o @Controller.
+
+2. ¿Para qué sirve el paquete Service en la estructura Spring Boot?
+   
+    R/ El paquete Service contiene la lógica de negocio de la aplicación. Aquí se procesan los datos antes de enviarlos al repositorio o devolverlos al controlador. Permite        separar responsabilidades y mantener el código organizado, utilizando anotaciones como @Service.
+
+3. ¿Para qué sirve el paquete Repository en la estructura Spring Boot?
+   
+    R/ El paquete Repository se encarga del acceso a la base de datos. Permite realizar operaciones CRUD (crear, leer, actualizar y eliminar) sobre las entidades.                  Generalmente extiende interfaces como JpaRepository y usa la anotación @Repository.
+
+4. ¿Para qué sirve el paquete Controller en la estructura Spring Boot?
+   
+    R/ El paquete Controller cumple la función de recibir y responder solicitudes HTTP, actuando como punto de entrada de la aplicación. Se encarga de dirigir las                  peticiones hacia los servicios correspondientes y devolver la información adecuada al cliente.
+
+5. ¿Para qué sirve el paquete Entity en la estructura Spring Boot?
+    
+    R/ El paquete Entity define las clases que representan las tablas de la base de datos. Cada entidad está mapeada mediante anotaciones como @Entity, permitiendo la              persistencia de datos a través de JPA o Hibernate.
+
+6. ¿Para qué sirve el paquete DTO en la estructura Spring Boot?
+    
+    R/El paquete DTO (Data Transfer Object) se utiliza para transferir datos entre capas de la aplicación. Ayuda a evitar exponer directamente las entidades y permite             controlar la información que se envía o recibe en las APIs.
+
+7. ¿Para qué sirve el paquete Exception en la estructura Spring Boot?
+   
+    R/ El paquete Exception contiene las clases para el manejo de errores personalizados. Permite capturar y gestionar excepciones de forma centralizada, mejorando la              claridad del código y la respuesta al cliente mediante anotaciones como @ControllerAdvice.
+
+## Bibliografía
+
+Pivotal Software. (2023). Spring Boot Reference Documentation. Recuperado de https://spring.io
+
+Baeldung. (2024). Guía de Spring Boot. Recuperado de https://www.baeldung.com
+
+Oracle. (2023). Documentación oficial de Java. Recuperado de https://docs.oracle.com
+
+
+
 ## Miembros
 - Luiza Mariana Gonzales Veloza
 

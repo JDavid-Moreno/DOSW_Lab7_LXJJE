@@ -1,6 +1,7 @@
 # TechCup Fútbol
 
-Plataforma web para la gestión del torneo semestral de fútbol de los programas de Ingeniería de Sistemas, Ingeniería de Inteligencia Artificial, Ingeniería de Ciberseguridad e Ingeniería Estadística de la Escuela Colombiana de Ingeniería.
+Plataforma web para la gestión del torneo semestral de f
+útbol de los programas de Ingeniería de Sistemas, Ingeniería de Inteligencia Artificial, Ingeniería de Ciberseguridad e Ingeniería Estadística de la Escuela Colombiana de Ingeniería.
 
 El sistema centraliza el registro de jugadores y equipos, la gestión de pagos, la programación de partidos, el registro de resultados, la tabla de posiciones, las llaves eliminatorias y las estadísticas del torneo.
 
@@ -69,6 +70,19 @@ Esto ejecuta todas las pruebas unitarias y de integración definidas en el proye
 - Los mockups, flujos de navegación y manual de identidad se encuentran en docs/ui.
 - Las decisiones de diseño y arquitectura se documentan de forma incremental durante el desarrollo del proyecto.
 
+## Documentación
+
+mvn spring-boot:run
+
+----
+![DocumentacionP1.png](src/main/resources/docs/images/DocumentacionP1.png)
+![DocumentacionP2.png](src/main/resources/docs/images/DocumentacionP2.png)
+![DocumentacionP3.png](src/main/resources/docs/images/DocumentacionP3.png)
+![DocumentacionP4.png](src/main/resources/docs/images/DocumentacionP4.png)
+![DocumentacionP5.png](src/main/resources/docs/images/DocumentacionP5.png)
+---
+http://localhost:8080/swagger-ui.html
+---
 
 ## Miembros
 - Luiza Mariana Gonzales Veloza

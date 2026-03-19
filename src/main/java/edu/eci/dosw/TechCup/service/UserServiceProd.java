@@ -10,15 +10,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 @Service
 @Profile("prod")
 public class UserServiceProd implements UserService {
 
     private UserRepository userRepository;
-    private static final Logger log = LoggerFactory.getLogger(UserServiceProd.class);
 
     public UserServiceProd(UserRepository userRepository) {
         this.userRepository = userRepository;

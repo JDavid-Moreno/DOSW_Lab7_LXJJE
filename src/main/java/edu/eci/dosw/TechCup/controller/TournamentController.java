@@ -34,13 +34,13 @@ public class TournamentController {
     }
     @PostMapping
     @Operation(summary = "Crear torneo", description = "Crea un nuevo torneo en estado Borrador por defecto")
-    public ResponseEntity<Tournament> createTournament(@RequestBody Tournament tournament) {
+    public ResponseEntity<Tournament> create(@RequestBody Tournament tournament) {
         Tournament created = tournamentService.createTournament(tournament);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
     @DeleteMapping("{id}")
     @Operation(summary = "Eliminar torneo", description = "Elimina un torneo solo si está en estado Borrador")
-    public ResponseEntity<Void> deleteTournament(@PathVariable Long id) {
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
         tournamentService.deleteTournament(id);
         return ResponseEntity.noContent().build();
     }

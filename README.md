@@ -82,6 +82,16 @@ mvn spring-boot:run
 ![DocumentacionP5.png](src/main/resources/docs/images/DocumentacionP5.png)
 ---
 ## Pruebas funcionamiento
+### registrar usuario
+![DocumentacionP6.png](src/main/resources/docs/images/DocumentacionP6.png)
+### iniciar sesión
+![DocumentacionP7.png](src/main/resources/docs/images/DocumentacionP7.png)
+### crear torneo
+![DocumentacionP8.png](src/main/resources/docs/images/DocumentacionP8.png)
+### obtener torneo
+![DocumentacionP9.png](src/main/resources/docs/images/DocumentacionP9.png)
+### eliminar torneo
+![DocumentacionP10.png](src/main/resources/docs/images/DocumentacionP10.png)
 
 http://localhost:8080/swagger-ui.html
 ---

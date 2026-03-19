@@ -58,7 +58,7 @@ public class TournamentServiceProd implements TournamentService {
 
     @Transactional
     public Tournament createTournament(Tournament tournament) {
-        log.info("Creando torneo con nombre: {}", tournament.getName());
+        log.info("Creando torneo");
 
         tournament.setState(TournamentState.BORRADOR);
         Tournament savedTournament = tournamentRepository.save(tournament);

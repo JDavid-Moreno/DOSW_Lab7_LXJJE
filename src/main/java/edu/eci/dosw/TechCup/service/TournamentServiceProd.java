@@ -12,44 +12,78 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 @Service
 @Profile("prod")
 public class TournamentServiceProd implements TournamentService {
     private TournamentRepository tournamentRepository;
+    private static final Logger log = LoggerFactory.getLogger(TournamentServiceProd.class);
 
     public TournamentServiceProd(TournamentRepository tournamentRepository) {
         this.tournamentRepository = tournamentRepository;
     }
+
     @Transactional
     public Optional<Tournament> searchTournamentById(Long id) {
-        return tournamentRepository.findById(id);
+        log.info("Buscando torneo con id: {}", id);
+
+        Optional<Tournament> tournament = tournamentRepository.findById(id);
+
+        if (tournament.isPresent()) {
+            log.info("Torneo encontrado con id: {}", id);
+        } else {
+            log.warn("Torneo no encontrado con id: {}", id);
+        }
+
+        return tournament;
     }
+
     @Transactional
     public List<Team> searchTournamentTeams(Long id){
+        log.info("Consultando equipos del torneo con id: {}", id);
+
         Optional<Tournament> tournament = tournamentRepository.findById(id);
+
         if (tournament.isPresent()) {
+            log.info("Equipos encontrados para el torneo con id: {}", id);
             return tournament.get().getTeams();
         }
-        else
+        else {
+            log.warn("No se encontraron equipos: torneo no existe con id {}", id);
             throw new EntityNotFoundException("Tournament not found");
+        }
     }
+
     @Transactional
     public Tournament createTournament(Tournament tournament) {
+        log.info("Creando torneo");
+
         tournament.setState(TournamentState.BORRADOR);
-        return tournamentRepository.save(tournament);
+        Tournament savedTournament = tournamentRepository.save(tournament);
+
+        log.info("Torneo creado en estado BORRADOR con id: {}", savedTournament.getId());
+        return savedTournament;
     }
+
     @Transactional
     public void deleteTournament(Long id) {
+        log.info("Intentando eliminar torneo con id: {}", id);
+
         Optional<Tournament> tournament = tournamentRepository.findById(id);
+
         if (tournament.isPresent() && tournament.get().getState().equals(TournamentState.BORRADOR)) {
             tournamentRepository.deleteById(id);
+            log.info("Torneo eliminado correctamente con id: {}", id);
         }
         else if (tournament.isEmpty()) {
+            log.warn("No se puede eliminar: torneo no encontrado con id {}", id);
             throw new EntityNotFoundException("Tournament not found");
         }
         else{
+            log.warn("No se puede eliminar torneo con id {} porque no está en estado BORRADOR", id);
             throw new TournamentException("Tournament must be in state BORRADOR");
         }
     }

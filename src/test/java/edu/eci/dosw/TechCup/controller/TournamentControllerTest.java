@@ -1,6 +1,5 @@
 package edu.eci.dosw.TechCup.controller;
 
-import edu.eci.dosw.TechCup.controller.TournamentController;
 import edu.eci.dosw.TechCup.model.Team;
 import edu.eci.dosw.TechCup.model.Tournament;
 import edu.eci.dosw.TechCup.service.TournamentService;
@@ -65,22 +64,22 @@ class TournamentControllerTest {
     }
 
     @Test
-    void shouldCreateTournament() {
+    void shouldCreate() {
         Tournament tournament = new Tournament();
 
         when(tournamentService.createTournament(tournament))
                 .thenReturn(tournament);
 
-        ResponseEntity<Tournament> response = controller.createTournament(tournament);
+        ResponseEntity<Tournament> response = controller.create(tournament);
 
         assertEquals(201, response.getStatusCodeValue());
     }
 
     @Test
-    void shouldDeleteTournament() {
+    void shouldDelete() {
         doNothing().when(tournamentService).deleteTournament(1L);
 
-        ResponseEntity<Void> response = controller.deleteTournament(1L);
+        ResponseEntity<Void> response = controller.delete(1L);
 
         assertEquals(204, response.getStatusCodeValue());
         verify(tournamentService, times(1)).deleteTournament(1L);

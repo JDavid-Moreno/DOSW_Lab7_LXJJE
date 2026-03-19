@@ -81,6 +81,8 @@ mvn spring-boot:run
 ![DocumentacionP4.png](src/main/resources/docs/images/DocumentacionP4.png)
 ![DocumentacionP5.png](src/main/resources/docs/images/DocumentacionP5.png)
 ---
+## Pruebas funcionamiento
+
 http://localhost:8080/swagger-ui.html
 ---
 

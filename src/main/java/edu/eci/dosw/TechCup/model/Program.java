@@ -1,0 +1,5 @@
+package edu.eci.dosw.TechCup.model;
+
+public enum Program {
+    INGENIERIA_SISTEMAS, IA, CIBERSEGURIDAD, ESTADISTICA, M_GESTION_INFORMACION, M_INFORMATICA, M_CIENCIA_DATOS, OTRO
+}

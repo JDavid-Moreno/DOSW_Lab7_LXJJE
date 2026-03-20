@@ -130,7 +130,7 @@ Las clases que cumplen con los requerimientos asociados  a la autenticación, us
 
 Al compilar el proyecto con los test implementados en la verificación de los requerimientos, obtenemos un buil correcto y funcional donde las pruebas generadas son consistentes con respecto a las clases desarrolladas.
 
-![BuildSuccesfully](src\main\resources\docs\images\BuildSuccesfully.png)
+![BuildSuccesfully](src/main/resources/docs/images/BuildSuccesfully.png)
 
 ---
 

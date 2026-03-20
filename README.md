@@ -126,6 +126,12 @@ Las clases que cumplen con los requerimientos asociados  a la autenticación, us
 - [TournamentRegistration:](src\main\java\edu\eci\dosw\TechCup\model\TournamentRegistration.java) Es el encargado de realizar el registro inicial de los torneos antes de guardarlos como creados
 - [TournamentState:](src\main\java\edu\eci\dosw\TechCup\model\TournamentState.java) Define si un torneo ya pasó, esta pendiente o está en curso
 
+**Compilando**
+
+Al compilar el proyecto con los test implementados en la verificación de los requerimientos, obtenemos un buil correcto y funcional donde las pruebas generadas son consistentes con respecto a las clases desarrolladas.
+
+![BuildSuccesfully](src\main\resources\docs\images\BuildSuccesfully.png)
+
 ---
 
 ## Preguntas 

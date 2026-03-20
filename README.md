@@ -95,6 +95,44 @@ mvn spring-boot:run
 
 http://localhost:8080/swagger-ui.html
 ---
+## Diagrama de Clases Implementación
+
+Las clases que cumplen con los requerimientos asociados  a la autenticación, usuarios y torneos respectivamente son las siguientes:
+
+### Autenticación
+
+- [AuthenticationController:](src/main/java/edu/eci/dosw/TechCup/controller/AuthenticationController.java) controlador de la autenticacion del usuario por medio de verificación de datos
+- [AuthenticationService:](src/main/java/edu/eci/dosw/TechCup/service/AuthenticationService.java) interfaz de autenticación del usuario
+- [AuthenticationServiceProd:](src/main/java/edu/eci/dosw/TechCup/service/AuthenticationServiceProd.java) clase encargada de comenzar a generar las conexiones y verificaciones necesarias para verificar la autenticación del usuario en el sistema
+- [User:](src/main/java/edu/eci/dosw/TechCup/model/User.java) clase usada para verificar la identidad y correcta relación de los datos ingresados y usados en la autenticación
+
+### Usuarios
+
+- [User:](src/main/java/edu/eci/dosw/TechCup/model/User.java) incluye toda la información relacionada con el usuario a crear y se apoya en enums tales como lo son:
+    - [Gender:](src/main/java/edu/eci/dosw/TechCup/model/Gender.java) genero del usuario 
+    - [IdentificationType:](src/main/java/edu/eci/dosw/TechCup/model/IdentificationType.java) tipo de identificación del usuario
+    - [Position:](src/main/java/edu/eci/dosw/TechCup/model/Position.java) posición del usuario en el torneo
+    - [Program:](src/main/java/edu/eci/dosw/TechCup/model/Program.java) programa académico al que pertenece el usuario
+    - [Role:](src/main/java/edu/eci/dosw/TechCup/model/Role.java) Tipo de rol que cumple el usuario en la organización
+    - [UserState:](src/main/java/edu/eci/dosw/TechCup/model/UserState.java) usuario activo o inactivo en el sistema 
+    - [File:](src/main/java/edu/eci/dosw/TechCup/model/File.java) guarda la foto de perfil del usuario
+
+### Torneos
+
+- [Team:](src/main/java/edu/eci/dosw/TechCup/model/Team.java) Guarda los equipos que participarán en cada torneo correspondiente
+- [File:](src/main/java/edu/eci/dosw/TechCup/model/File.java) Se encarga de guardar y presentar el manual del torneo
+- [Position:](src/main/java/edu/eci/dosw/TechCup/model/Position.java) enum encargado de las posiciones de los jugadores de los torneos
+- [Tournament:](src/main/java/edu/eci/dosw/TechCup/model/Tournament.java) Es el encargado principal de guardar toda la información correspondiente a los torneos creados.
+- [TournamentRegistration:](src/main/java/edu/eci/dosw/TechCup/model/TournamentRegistration.java) Es el encargado de realizar el registro inicial de los torneos antes de guardarlos como creados
+- [TournamentState:](src/main/java/edu/eci/dosw/TechCup/model/TournamentState.java) Define si un torneo ya pasó, esta pendiente o está en curso
+
+**Compilando**
+
+Al compilar el proyecto con los test implementados en la verificación de los requerimientos, obtenemos un buil correcto y funcional donde las pruebas generadas son consistentes con respecto a las clases desarrolladas.
+
+![BuildSuccesfully](src/main/resources/docs/images/BuildSuccesfully.png)
+
+---
 
 ## Preguntas 
 

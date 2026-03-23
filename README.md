@@ -171,11 +171,13 @@ Las entidades seleccionadas son:
 - TeamMember
 - Tournament
 - TournamentRegistration
+- TeamInvitation
 
 Las relaciones entre ellas se describen de la siguiente manera:
 - TeamMember: (1 -> 1) User, (1..* -> 1) Team.
 - TournamentRegistration: (0..* -> 1) Team, (0..* -> 1) Tournament. 
 - Tournament: (0..* -> 1) User.
+- TeamInvitation: (1 -> 1)User, (0..* -> 1)TeamMember.
 
 Justificación:
 
@@ -186,6 +188,8 @@ En cuanto a las relaciones, un TeamMember tiene un solo usuario asociado, y uno 
 TournamentRegistration es de 0 a muchos con un equipo, porque son todas las veces que un equipo ha participado en un torneo, puede que nunca halla participado en ninguno. Y 0 a muchos con un Tournament por todos los equipos registrados a un torneo, al principio no habra ningun equipo registrado.
 
 Tournament es de 0 a muchos con un usuario que representa el organizador del torneo, ya que un organizador puede crear más de un torneo, o nunca crear ninguno.
+
+TeamInvitation tiene un solo User a la que va dirigida, y de 0 a muchos a TeamMember que representa todas las invitaciones que hace el capitan para invitar jugadores a su equipo.
 
 ## Bibliografía
 

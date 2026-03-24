@@ -19,10 +19,10 @@ public class TeamMemberEntity {
     @Column(nullable = false)
     private Boolean isCaptain;
     @OneToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id", nullable = false)
     private UserEntity user;
     @ManyToOne
-    @JoinColumn(name = "team_id")
+    @JoinColumn(name = "team_id", nullable = false)
     private TeamEntity team;
 
     public TeamMemberEntity() {}

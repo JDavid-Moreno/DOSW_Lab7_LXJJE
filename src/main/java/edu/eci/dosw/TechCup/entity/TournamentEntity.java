@@ -33,8 +33,8 @@ public class TournamentEntity {
     @Column(nullable = false)
     private Float coast;
     @OneToOne
-    @JoinColumn(name = "captain_id")
-    private UserEntity organizator;
+    @JoinColumn(name = "captain_id", nullable = false)
+    private UserEntity organizer;
     @OneToMany(mappedBy = "tournament")
     private List<TeamEntity> teams;
     public TournamentEntity() {
@@ -110,12 +110,12 @@ public class TournamentEntity {
         this.numberTeams = numberTeams;
     }
 
-    public UserEntity getOrganizator() {
-        return organizator;
+    public UserEntity getOrganizer() {
+        return organizer;
     }
 
-    public void setOrganizator(UserEntity organizator) {
-        this.organizator = organizator;
+    public void setOrganizer(UserEntity organizer) {
+        this.organizer = organizer;
     }
 
     public Float getCoast() {

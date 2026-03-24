@@ -1,18 +1,27 @@
-package edu.eci.dosw.TechCup.model;
+package edu.eci.dosw.TechCup.entity;
+
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
-public class File {
+
+@Entity
+public class FileEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Lob
     private byte[] bytes;
+    @Column(nullable = false)
     private String mime;
+    @Column(nullable = false)
     private LocalDate lastMod;
-    public File() {}
-    public File(byte[] bytes, String mime, LocalDate lastMod) {
+    public FileEntity() {}
+    public FileEntity(byte[] bytes, String mime, LocalDate lastMod) {
         this.bytes = bytes;
         this.mime = mime;
         this.lastMod = lastMod;
     }
-    public File(byte[] bytes, String mime) {
+    public FileEntity(byte[] bytes, String mime) {
         this.bytes = bytes;
         this.mime = mime;
         this.lastMod = LocalDate.now();

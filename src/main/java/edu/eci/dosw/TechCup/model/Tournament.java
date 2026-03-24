@@ -13,7 +13,7 @@ public class Tournament {
     private LocalDate endDate;
     private Integer numberTeams;
     private Float coast;
-    private User captain;
+    private User organizator;
     private List<Team> teams;
     public Tournament() {
         this.teams = new ArrayList<>();

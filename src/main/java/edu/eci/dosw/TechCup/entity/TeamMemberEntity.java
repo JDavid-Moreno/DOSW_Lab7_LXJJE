@@ -17,7 +17,7 @@ public class TeamMemberEntity {
     @Column(nullable = false)
     private Integer dorsal;
     @Column(nullable = false)
-    private boolean isCaptain;
+    private Boolean isCaptain;
     @OneToOne
     @JoinColumn(name = "user_id")
     private UserEntity user;

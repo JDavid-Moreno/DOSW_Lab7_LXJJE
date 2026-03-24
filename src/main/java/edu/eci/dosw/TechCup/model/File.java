@@ -1,13 +1,15 @@
 package edu.eci.dosw.TechCup.model;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 public class File {
     private Long id;
     private byte[] bytes;
     private String mime;
-    private LocalDate lastMod;
+    private LocalDateTime lastMod;
     public File() {}
-    public File(byte[] bytes, String mime, LocalDate lastMod) {
+    public File(byte[] bytes, String mime, LocalDateTime lastMod) {
         this.bytes = bytes;
         this.mime = mime;
         this.lastMod = lastMod;
@@ -15,9 +17,9 @@ public class File {
     public File(byte[] bytes, String mime) {
         this.bytes = bytes;
         this.mime = mime;
-        this.lastMod = LocalDate.now();
+        this.lastMod = LocalDateTime.now();
     }
-    public LocalDate getLastMod() {
+    public LocalDateTime getLastMod() {
         return lastMod;
     }
     public byte[] getBytes() {

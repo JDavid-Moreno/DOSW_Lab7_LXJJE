@@ -1,5 +1,6 @@
 package edu.eci.dosw.TechCup.service;
 
+import edu.eci.dosw.TechCup.entity.TournamentEntity;
 import edu.eci.dosw.TechCup.exception.TournamentException;
 import edu.eci.dosw.TechCup.model.Team;
 import edu.eci.dosw.TechCup.model.Tournament;
@@ -30,7 +31,7 @@ public class TournamentServiceProd implements TournamentService {
     public Optional<Tournament> searchTournamentById(Long id) {
         log.info("Buscando torneo con id: {}", id);
 
-        Optional<Tournament> tournament = tournamentRepository.findById(id);
+        Optional<TournamentEntity> tournament = tournamentRepository.findById(id);
 
         if (tournament.isPresent()) {
             log.info("Torneo encontrado con id: {}", id);
@@ -45,9 +46,9 @@ public class TournamentServiceProd implements TournamentService {
     public List<Team> searchTournamentTeams(Long id){
         log.info("Consultando equipos del torneo con id: {}", id);
 
-        Optional<Tournament> tournament = tournamentRepository.findById(id);
+        Optional<TournamentEntity> tournamentEntity = tournamentRepository.findById(id);
 
-        if (tournament.isPresent()) {
+        if (tournamentEntity.isPresent()) {
             log.info("Equipos encontrados para el torneo con id: {}", id);
             return tournament.get().getTeams();
         }
@@ -62,7 +63,7 @@ public class TournamentServiceProd implements TournamentService {
         log.info("Creando torneo");
 
         tournament.setState(TournamentState.BORRADOR);
-        Tournament savedTournament = tournamentRepository.save(tournament);
+        TournamentEntity savedTournament = tournamentRepository.save(tournament);
 
         log.info("Torneo creado en estado BORRADOR con id: {}", savedTournament.getId());
         return savedTournament;
@@ -72,13 +73,13 @@ public class TournamentServiceProd implements TournamentService {
     public void deleteTournament(Long id) {
         log.info("Intentando eliminar torneo con id: {}", id);
 
-        Optional<Tournament> tournament = tournamentRepository.findById(id);
+        Optional<TournamentEntity> tournamentEntity = tournamentRepository.findById(id);
 
-        if (tournament.isPresent() && tournament.get().getState().equals(TournamentState.BORRADOR)) {
+        if (tournamentEntity.isPresent() && tournamentEntity.get().getState().equals(TournamentState.BORRADOR)) {
             tournamentRepository.deleteById(id);
             log.info("Torneo eliminado correctamente con id: {}", id);
         }
-        else if (tournament.isEmpty()) {
+        else if (tournamentEntity.isEmpty()) {
             log.warn("No se puede eliminar: torneo no encontrado con id {}", id);
             throw new EntityNotFoundException("Tournament not found");
         }

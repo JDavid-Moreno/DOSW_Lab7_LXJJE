@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -42,7 +43,7 @@ class TechCupApplicationTests {
 	@Test
 	void testArchivoCreation(){
 		byte[] bytes = new byte[] {1,2,3,4,5,6,7,8,9,10,11,12};
-		LocalDate date = LocalDate.now();
+		LocalDateTime date = LocalDateTime.now();
 		File a = new File(bytes, "application/pdf", date );
 		assertEquals(bytes, a.getBytes());
 		assertEquals("application/pdf", a.getMime());

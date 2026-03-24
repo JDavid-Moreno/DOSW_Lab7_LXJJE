@@ -1,4 +1,5 @@
 package edu.eci.dosw.TechCup.service;
+import edu.eci.dosw.TechCup.entity.UserEntity;
 import edu.eci.dosw.TechCup.model.Role;
 import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
@@ -27,7 +28,7 @@ public class UserServiceProd implements UserService {
     public Optional<User> searchUserByEmail(String mail) {
         log.info("Buscando usuario por email: {}", mail);
 
-        Optional<User> user = userRepository.findByEmail(mail);
+        Optional<UserEntity> user = userRepository.findByEmail(mail);
 
         if (user.isPresent()) {
             log.info("Usuario encontrado con email: {}", mail);
@@ -42,7 +43,7 @@ public class UserServiceProd implements UserService {
     public Optional<User> searchUserById(Long id) {
         log.info("Buscando usuario por id: {}", id);
 
-        Optional<User> user = userRepository.findById(id);
+        Optional<UserEntity> user = userRepository.findById(id);
 
         if (user.isPresent()) {
             log.info("Usuario encontrado con id: {}", id);
@@ -57,7 +58,7 @@ public class UserServiceProd implements UserService {
     public Optional<User> searchUserByIdentification(String identification) {
         log.info("Buscando usuario por identificación: {}", identification);
 
-        Optional<User> user = userRepository.findByIdentification(identification);
+        Optional<UserEntity> user = userRepository.findByIdentification(identification);
 
         if (user.isPresent()) {
             log.info("Usuario encontrado con identificación: {}", identification);
@@ -72,7 +73,7 @@ public class UserServiceProd implements UserService {
     public void updateRole(Long id, Role role) {
         log.info("Actualizando rol del usuario con id: {} a {}", id, role);
 
-        Optional<User> user = userRepository.findById(id);
+        Optional<UserEntity> user = userRepository.findById(id);
 
         if (user.isPresent()) {
             user.get().setRole(role);
@@ -88,7 +89,7 @@ public class UserServiceProd implements UserService {
     public void updateState(Long id, UserState state) {
         log.info("Actualizando estado del usuario con id: {} a {}", id, state);
 
-        Optional<User> user = userRepository.findById(id);
+        Optional<UserEntity> user = userRepository.findById(id);
 
         if (user.isPresent()) {
             user.get().setState(state);

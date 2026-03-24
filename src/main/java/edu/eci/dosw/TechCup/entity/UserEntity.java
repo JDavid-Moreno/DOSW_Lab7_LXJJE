@@ -42,7 +42,7 @@ public class UserEntity {
     private Position predefinedPosition;
     private String predefinedDorsal;
     @OneToOne
-    @JoinColumn(name = "profile_picture_id")
+    @JoinColumn(name = "profile_picture_id", nullable = true)
     private FileEntity profilePicture;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
@@ -139,5 +139,29 @@ public class UserEntity {
     }
     public void setState(UserState state) {
         this.state = state;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public void setIdentificationType(IdentificationType identificationType) {
+        this.identificationType = identificationType;
+    }
+
+    public void setIdentification(String identification) {
+        this.identification = identification;
+    }
+
+    public void setProgram(Program program) {
+        this.program = program;
     }
 }

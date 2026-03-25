@@ -191,6 +191,11 @@ Tournament es de 0 a muchos con un usuario que representa el organizador del tor
 
 TeamInvitation tiene un solo User a la que varias van dirigidas, y de 0 a muchos a TeamMember que representa todas las invitaciones que hace el capitan para invitar jugadores a su equipo.
 
+---
+## Database Configuration
+
+![database](src/main/resources/docs/images/database.jpeg)
+
 ## Bibliografía
 
 Pivotal Software. (2023). Spring Boot Reference Documentation. Recuperado de https://spring.io

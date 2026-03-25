@@ -1735,3 +1735,129 @@ This generated password is for development use only. Your security configuration
 2026-03-25T14:21:08.144-05:00  INFO 32864 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2026-03-25T14:21:08.642-05:00  INFO 32864 --- [TechCup] [main] e.e.d.T.r.TeamMemberRepositoryTest       : Started TeamMemberRepositoryTest in 3.515 seconds (process running for 4.434)
 2026-03-25T14:21:09.204-05:00  INFO 32864 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:22:29.141-05:00  INFO 34776 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Starting TeamInvitationRepositoryTest using Java 21.0.10 with PID 34776 (started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
+2026-03-25T14:22:29.143-05:00  INFO 34776 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : The following 1 profile is active: "test"
+2026-03-25T14:22:29.583-05:00  INFO 34776 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25T14:22:29.680-05:00  INFO 34776 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 7 JPA repository interfaces.
+2026-03-25T14:22:29.736-05:00  INFO 34776 --- [TechCup] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-03-25T14:22:29.941-05:00  INFO 34776 --- [TechCup] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:5e0b25d2-439f-4b88-a738-d6aa4daa274f;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-25T14:22:30.198-05:00  INFO 34776 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-25T14:22:30.247-05:00  INFO 34776 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-25T14:22:30.278-05:00  INFO 34776 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-25T14:22:30.511-05:00  INFO 34776 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25T14:22:30.577-05:00  WARN 34776 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25T14:22:31.617-05:00  INFO 34776 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-25T14:22:31.767-05:00  INFO 34776 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:22:32.379-05:00  INFO 34776 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Started TeamInvitationRepositoryTest in 3.643 seconds (process running for 4.62)
+2026-03-25T14:22:32.948-05:00  WARN 34776 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2026-03-25T14:22:32.948-05:00 ERROR 34776 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "INVITED_BY_ID"; SQL statement:
+insert into team_invitation_entity (date,invited_id,invited_by_id,status,id) values (?,?,?,?,default) [23502-224]
+2026-03-25T14:22:32.986-05:00  INFO 34776 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:23:53.908-05:00  INFO 37192 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Starting TeamInvitationRepositoryTest using Java 21.0.10 with PID 37192 (started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
+2026-03-25T14:23:53.911-05:00  INFO 37192 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : The following 1 profile is active: "test"
+2026-03-25T14:23:54.342-05:00  INFO 37192 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25T14:23:54.449-05:00  INFO 37192 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 7 JPA repository interfaces.
+2026-03-25T14:23:54.514-05:00  INFO 37192 --- [TechCup] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-03-25T14:23:54.720-05:00  INFO 37192 --- [TechCup] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f376fa73-9233-4505-921b-89fd2f2b7d1f;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-25T14:23:55.012-05:00  INFO 37192 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-25T14:23:55.059-05:00  INFO 37192 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-25T14:23:55.083-05:00  INFO 37192 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-25T14:23:55.330-05:00  INFO 37192 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25T14:23:55.417-05:00  WARN 37192 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25T14:23:56.490-05:00  INFO 37192 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-25T14:23:56.585-05:00  INFO 37192 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:23:57.086-05:00  INFO 37192 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Started TeamInvitationRepositoryTest in 3.556 seconds (process running for 4.562)
+2026-03-25T14:23:57.657-05:00  WARN 37192 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2026-03-25T14:23:57.659-05:00 ERROR 37192 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "IS_CAPTAIN"; SQL statement:
+insert into team_member_entity (dorsal,is_captain,position,team_id,user_id,id) values (?,?,?,?,?,default) [23502-224]
+2026-03-25T14:23:57.720-05:00  INFO 37192 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:27:15.454-05:00  INFO 31116 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Starting TeamInvitationRepositoryTest using Java 21.0.10 with PID 31116 (started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
+2026-03-25T14:27:15.457-05:00  INFO 31116 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : The following 1 profile is active: "test"
+2026-03-25T14:27:15.904-05:00  INFO 31116 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25T14:27:15.996-05:00  INFO 31116 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 7 JPA repository interfaces.
+2026-03-25T14:27:16.063-05:00  INFO 31116 --- [TechCup] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-03-25T14:27:16.262-05:00  INFO 31116 --- [TechCup] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:64871250-2490-42a5-80b7-a69601bd6e7b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-25T14:27:16.568-05:00  INFO 31116 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-25T14:27:16.616-05:00  INFO 31116 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-25T14:27:16.644-05:00  INFO 31116 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-25T14:27:16.879-05:00  INFO 31116 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25T14:27:16.936-05:00  WARN 31116 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25T14:27:18.078-05:00  INFO 31116 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-25T14:27:18.175-05:00  INFO 31116 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:27:18.755-05:00  INFO 31116 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Started TeamInvitationRepositoryTest in 3.718 seconds (process running for 4.804)
+2026-03-25T14:27:19.344-05:00  WARN 31116 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2026-03-25T14:27:19.344-05:00 ERROR 31116 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "IS_CAPTAIN"; SQL statement:
+insert into team_member_entity (dorsal,is_captain,position,team_id,user_id,id) values (?,?,?,?,?,default) [23502-224]
+2026-03-25T14:27:19.387-05:00  INFO 31116 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:27:44.079-05:00  INFO 7124 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Starting TeamInvitationRepositoryTest using Java 21.0.10 with PID 7124 (started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
+2026-03-25T14:27:44.080-05:00  INFO 7124 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : The following 1 profile is active: "test"
+2026-03-25T14:27:44.580-05:00  INFO 7124 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25T14:27:44.697-05:00  INFO 7124 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 7 JPA repository interfaces.
+2026-03-25T14:27:44.750-05:00  INFO 7124 --- [TechCup] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-03-25T14:27:44.962-05:00  INFO 7124 --- [TechCup] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:6882e880-c46e-4212-b487-246cee018fef;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-25T14:27:45.269-05:00  INFO 7124 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-25T14:27:45.317-05:00  INFO 7124 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-25T14:27:45.363-05:00  INFO 7124 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-25T14:27:45.626-05:00  INFO 7124 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25T14:27:45.686-05:00  WARN 7124 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25T14:27:46.780-05:00  INFO 7124 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-25T14:27:46.866-05:00  INFO 7124 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:27:47.366-05:00  INFO 7124 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Started TeamInvitationRepositoryTest in 3.739 seconds (process running for 4.709)
+2026-03-25T14:27:47.909-05:00  WARN 7124 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2026-03-25T14:27:47.909-05:00 ERROR 7124 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "IS_CAPTAIN"; SQL statement:
+insert into team_member_entity (dorsal,is_captain,position,team_id,user_id,id) values (?,?,?,?,?,default) [23502-224]
+2026-03-25T14:27:47.959-05:00  INFO 7124 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:28:53.815-05:00  INFO 14596 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Starting TeamInvitationRepositoryTest using Java 21.0.10 with PID 14596 (started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
+2026-03-25T14:28:53.824-05:00  INFO 14596 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : The following 1 profile is active: "test"
+2026-03-25T14:28:54.311-05:00  INFO 14596 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25T14:28:54.419-05:00  INFO 14596 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 7 JPA repository interfaces.
+2026-03-25T14:28:54.470-05:00  INFO 14596 --- [TechCup] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-03-25T14:28:54.647-05:00  INFO 14596 --- [TechCup] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:9c2c6481-e2c3-4d62-9442-6cf71db7b1d9;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-25T14:28:54.929-05:00  INFO 14596 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-25T14:28:54.980-05:00  INFO 14596 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-25T14:28:55.015-05:00  INFO 14596 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-25T14:28:55.284-05:00  INFO 14596 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25T14:28:55.341-05:00  WARN 14596 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25T14:28:56.395-05:00  INFO 14596 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-25T14:28:56.475-05:00  INFO 14596 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:28:56.972-05:00  INFO 14596 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Started TeamInvitationRepositoryTest in 3.547 seconds (process running for 4.576)
+2026-03-25T14:28:57.510-05:00  WARN 14596 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2026-03-25T14:28:57.511-05:00 ERROR 14596 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "IS_CAPTAIN"; SQL statement:
+insert into team_member_entity (dorsal,is_captain,position,team_id,user_id,id) values (?,?,?,?,?,default) [23502-224]
+2026-03-25T14:28:57.574-05:00  INFO 14596 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:31:10.128-05:00  INFO 30856 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Starting TeamInvitationRepositoryTest using Java 21.0.10 with PID 30856 (started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
+2026-03-25T14:31:10.130-05:00  INFO 30856 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : The following 1 profile is active: "test"
+2026-03-25T14:31:10.559-05:00  INFO 30856 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25T14:31:10.652-05:00  INFO 30856 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 7 JPA repository interfaces.
+2026-03-25T14:31:10.706-05:00  INFO 30856 --- [TechCup] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-03-25T14:31:10.901-05:00  INFO 30856 --- [TechCup] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:3c1242b0-f20d-4346-b933-13f724ad445c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-25T14:31:11.182-05:00  INFO 30856 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-25T14:31:11.232-05:00  INFO 30856 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-25T14:31:11.259-05:00  INFO 30856 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-25T14:31:11.515-05:00  INFO 30856 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25T14:31:11.581-05:00  WARN 30856 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25T14:31:12.605-05:00  INFO 30856 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-25T14:31:12.693-05:00  INFO 30856 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:31:13.183-05:00  INFO 30856 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Started TeamInvitationRepositoryTest in 3.483 seconds (process running for 4.481)
+2026-03-25T14:31:13.730-05:00  WARN 30856 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2026-03-25T14:31:13.730-05:00 ERROR 30856 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "INVITED_ID"; SQL statement:
+insert into team_invitation_entity (date,invited_id,invited_by_id,status,id) values (?,?,?,?,default) [23502-224]
+2026-03-25T14:31:13.765-05:00  INFO 30856 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:32:53.825-05:00  INFO 34360 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Starting TeamInvitationRepositoryTest using Java 21.0.10 with PID 34360 (started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
+2026-03-25T14:32:53.827-05:00  INFO 34360 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : The following 1 profile is active: "test"
+2026-03-25T14:32:54.272-05:00  INFO 34360 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25T14:32:54.380-05:00  INFO 34360 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 7 JPA repository interfaces.
+2026-03-25T14:32:54.439-05:00  INFO 34360 --- [TechCup] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-03-25T14:32:54.661-05:00  INFO 34360 --- [TechCup] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:bee10edd-6622-46e4-8746-3952847f00ad;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-25T14:32:54.935-05:00  INFO 34360 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-25T14:32:54.981-05:00  INFO 34360 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-25T14:32:55.013-05:00  INFO 34360 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-25T14:32:55.247-05:00  INFO 34360 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25T14:32:55.307-05:00  WARN 34360 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25T14:32:56.367-05:00  INFO 34360 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-25T14:32:56.448-05:00  INFO 34360 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:32:56.923-05:00  INFO 34360 --- [TechCup] [main] e.e.d.T.r.TeamInvitationRepositoryTest   : Started TeamInvitationRepositoryTest in 3.547 seconds (process running for 4.972)
+2026-03-25T14:32:57.458-05:00  WARN 34360 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
+2026-03-25T14:32:57.458-05:00 ERROR 34360 --- [TechCup] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_FBF2 ON PUBLIC.USER_ENTITY(PASSWORD NULLS FIRST) VALUES ( /* 1 */ '123' )"; SQL statement:
+insert into user_entity (birth_date,email,gender,identification,identification_type,last_name,name,password,predefined_dorsal,predefined_position,profile_picture_id,program,role,semester,state,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [23505-224]
+2026-03-25T14:32:57.513-05:00  INFO 34360 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

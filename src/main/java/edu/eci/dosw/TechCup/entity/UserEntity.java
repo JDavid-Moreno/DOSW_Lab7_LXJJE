@@ -1,29 +1,54 @@
-package edu.eci.dosw.TechCup.model;
+package edu.eci.dosw.TechCup.entity;
 
+import edu.eci.dosw.TechCup.model.*;
 import jakarta.persistence.*;
-
+import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDate;
 
-public class User {
+@Entity
+public class UserEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotBlank
+    @Column(unique = true, nullable = false)
     private String email;
+    @NotBlank
+    @Column(unique = true, nullable = false)
     private String password;
+    @Column(length = 50)
     private String name;
+    @Column(length = 50)
     private String lastName;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Role role;
     private LocalDate birthDate;
+    @Enumerated(EnumType.STRING)
     private Gender gender;
     private Integer semester;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private IdentificationType identificationType;
+    @NotBlank
+    @Column(nullable = false, unique = true)
     private String identification;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Program program;
+    @Enumerated(EnumType.STRING)
     private Position predefinedPosition;
     private String predefinedDorsal;
-    private File profilePicture;
+    @OneToOne
+    @JoinColumn(name = "profile_picture_id", nullable = true)
+    private FileEntity profilePicture;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private UserState state;
-    public User() {}
-    public User(String correo, String passwdCifrado, String nombres, String apellidos, LocalDate birthDate, Program program) {
+    public UserEntity() {}
+    public UserEntity(String correo, String passwdCifrado, String nombres, String apellidos, LocalDate birthDate, Program program) {
         this.email = correo;
         this.password = passwdCifrado;
         this.name = nombres;
@@ -91,10 +116,10 @@ public class User {
     public Long getId() {
         return id;
     }
-    public void setProfilePicture(File profilePicture) {
+    public void setProfilePicture(FileEntity profilePicture) {
         this.profilePicture = profilePicture;
     }
-    public File getProfilePicture() {
+    public FileEntity getProfilePicture() {
         return profilePicture;
     }
     public Position getPredefinedPosition() {
@@ -114,5 +139,29 @@ public class User {
     }
     public void setState(UserState state) {
         this.state = state;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public void setIdentificationType(IdentificationType identificationType) {
+        this.identificationType = identificationType;
+    }
+
+    public void setIdentification(String identification) {
+        this.identification = identification;
+    }
+
+    public void setProgram(Program program) {
+        this.program = program;
     }
 }

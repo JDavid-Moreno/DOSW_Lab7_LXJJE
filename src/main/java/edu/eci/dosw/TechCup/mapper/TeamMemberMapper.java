@@ -4,10 +4,12 @@ import edu.eci.dosw.TechCup.entity.TeamMemberEntity;
 import edu.eci.dosw.TechCup.model.TeamMember;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring",
+        uses = {UserMapper.class, FileMapper.class}
+)
 public interface TeamMemberMapper {
 
-    TeamMemberModel toModel(TeamMemberEntity entity);
+    TeamMember toModel(TeamMemberEntity entity);
 
     TeamMemberEntity toEntity(TeamMember model);
 

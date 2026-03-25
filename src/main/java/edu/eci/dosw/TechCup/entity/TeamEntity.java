@@ -58,4 +58,7 @@ public class TeamEntity {
     public void setName(String name) {
         this.name = name;
     }
+
+    public TournamentEntity getTournament() { return tournament; }
+    public void setTournament(TournamentEntity tournament) { this.tournament = tournament; }
 }

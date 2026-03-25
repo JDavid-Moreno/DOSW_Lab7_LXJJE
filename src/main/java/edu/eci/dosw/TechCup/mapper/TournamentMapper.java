@@ -4,7 +4,9 @@ import edu.eci.dosw.TechCup.entity.TournamentEntity;
 import edu.eci.dosw.TechCup.model.Tournament;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring",
+        uses = {TeamMapper.class}
+)
 public interface TournamentMapper {
 
     Tournament toModel(TournamentEntity entity);

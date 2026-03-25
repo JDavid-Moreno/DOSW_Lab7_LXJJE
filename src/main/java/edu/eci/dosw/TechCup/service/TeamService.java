@@ -2,7 +2,7 @@ package edu.eci.dosw.TechCup.service;
 
 import edu.eci.dosw.TechCup.model.Team;
 
-public interface TeamServices {
+public interface TeamService {
     Team findById(Long id);
     Team findByName(String name);
     Team createTeam(Team team);

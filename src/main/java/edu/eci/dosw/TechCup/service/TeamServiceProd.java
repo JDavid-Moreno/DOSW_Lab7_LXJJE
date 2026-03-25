@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class TeamServiceProd {
+public class TeamServiceProd implements TeamService{
     private TeamRepository teamRepository;
     private TeamMapper teamMapper;
 

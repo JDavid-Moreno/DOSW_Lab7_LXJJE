@@ -50,7 +50,7 @@ public class TournamentServiceProd implements TournamentService {
 
         if (tournamentEntity.isPresent()) {
             log.info("Equipos encontrados para el torneo con id: {}", id);
-            return tournament.get().getTeams();
+            return tournamentEntity.get().getTeams();
         }
         else {
             log.warn("No se encontraron equipos: torneo no existe con id {}", id);

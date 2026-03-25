@@ -27,6 +27,11 @@ public class TeamEntity {
     @OneToOne
     @JoinColumn(name = "shield_id")
     private FileEntity shield;
+
+    @ManyToOne
+    @JoinColumn(name = "tournament_id")
+    private TournamentEntity tournament;
+    
     public TeamEntity() {
     }
     public FileEntity getShield() {

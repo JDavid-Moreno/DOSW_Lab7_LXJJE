@@ -1626,3 +1626,18 @@ This generated password is for development use only. Your security configuration
 2026-03-25T14:03:53.811-05:00  INFO 35820 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2026-03-25T14:03:54.352-05:00  INFO 35820 --- [TechCup] [main] e.e.d.T.repository.TeamRepositoryTest    : Started TeamRepositoryTest in 3.742 seconds (process running for 4.762)
 2026-03-25T14:03:55.028-05:00  INFO 35820 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:05:45.967-05:00  INFO 34992 --- [TechCup] [main] e.e.d.T.r.TournamentRepositoryTest       : Starting TournamentRepositoryTest using Java 21.0.10 with PID 34992 (started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
+2026-03-25T14:05:45.968-05:00  INFO 34992 --- [TechCup] [main] e.e.d.T.r.TournamentRepositoryTest       : The following 1 profile is active: "test"
+2026-03-25T14:05:46.481-05:00  INFO 34992 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-25T14:05:46.569-05:00  INFO 34992 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 7 JPA repository interfaces.
+2026-03-25T14:05:46.625-05:00  INFO 34992 --- [TechCup] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-03-25T14:05:46.846-05:00  INFO 34992 --- [TechCup] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:fa756c0f-b36a-4809-b982-38cec1c76dec;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-25T14:05:47.111-05:00  INFO 34992 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-25T14:05:47.164-05:00  INFO 34992 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-25T14:05:47.194-05:00  INFO 34992 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-25T14:05:47.417-05:00  INFO 34992 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-25T14:05:47.476-05:00  WARN 34992 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-25T14:05:48.503-05:00  INFO 34992 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-25T14:05:48.607-05:00  INFO 34992 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-25T14:05:49.142-05:00  INFO 34992 --- [TechCup] [main] e.e.d.T.r.TournamentRepositoryTest       : Started TournamentRepositoryTest in 3.638 seconds (process running for 4.727)
+2026-03-25T14:05:49.733-05:00  INFO 34992 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

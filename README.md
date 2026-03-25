@@ -196,6 +196,9 @@ TeamInvitation tiene un solo User a la que varias van dirigidas, y de 0 a muchos
 
 ![database](src/main/resources/docs/images/database.jpeg)
 
+## Database information
+![database information](src/main/resources/docs/images/TablesDataBase.png)
+
 ## Bibliografía
 
 Pivotal Software. (2023). Spring Boot Reference Documentation. Recuperado de https://spring.io

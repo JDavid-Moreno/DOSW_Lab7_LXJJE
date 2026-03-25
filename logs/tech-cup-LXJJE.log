@@ -349,32 +349,3 @@ This generated password is for development use only. Your security configuration
 2026-03-25T11:39:22.333-05:00  INFO 30636 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-03-25T11:39:22.343-05:00  INFO 30636 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-03-25T11:39:22.359-05:00  INFO 30636 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-03-25T11:39:34.032-05:00  INFO 31660 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 21.0.9 with PID 31660 (C:\Users\karol\DOSW_Lab7_LXJJE\target\classes started by karol in C:\Users\karol\DOSW_Lab7_LXJJE)
-2026-03-25T11:39:34.032-05:00  INFO 31660 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "test"
-2026-03-25T11:39:35.349-05:00  INFO 31660 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-25T11:39:35.497-05:00  INFO 31660 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 7 JPA repository interfaces.
-2026-03-25T11:39:36.354-05:00  INFO 31660 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-03-25T11:39:36.383-05:00  INFO 31660 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-25T11:39:36.383-05:00  INFO 31660 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2026-03-25T11:39:36.485-05:00  INFO 31660 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-25T11:39:36.485-05:00  INFO 31660 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2362 ms
-2026-03-25T11:39:36.723-05:00  INFO 31660 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-25T11:39:36.799-05:00  INFO 31660 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-03-25T11:39:36.852-05:00  INFO 31660 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-25T11:39:37.173-05:00  INFO 31660 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-25T11:39:37.218-05:00  INFO 31660 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-25T11:39:37.474-05:00  INFO 31660 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@283d3628
-2026-03-25T11:39:37.475-05:00  INFO 31660 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-03-25T11:39:37.533-05:00  WARN 31660 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-03-25T11:39:39.406-05:00  INFO 31660 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-25T11:39:39.747-05:00  INFO 31660 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-25T11:39:39.950-05:00  WARN 31660 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-25T11:39:40.000-05:00  WARN 31660 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: c00f46a6-8f55-47ec-9552-8f789d403570
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-03-25T11:39:40.414-05:00  INFO 31660 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f93a8f6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@492d38a2, org.springframework.security.web.context.SecurityContextHolderFilter@46ef7340, org.springframework.security.web.header.HeaderWriterFilter@795949fb, org.springframework.web.filter.CorsFilter@3fc2e100, org.springframework.security.web.authentication.logout.LogoutFilter@1f207142, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62b0792, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fd409c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31885b4b, org.springframework.security.web.access.ExceptionTranslationFilter@3d67e3d3, org.springframework.security.web.access.intercept.AuthorizationFilter@2f09907]
-2026-03-25T11:39:41.541-05:00  INFO 31660 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2026-03-25T11:39:41.571-05:00  INFO 31660 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 8.322 seconds (process running for 8.902)

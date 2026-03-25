@@ -7,7 +7,7 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface TeamMapper {
 
-    Team toModel(TeamEntity entity);
+    TeamModel toModel(TeamEntity entity);
 
     TeamEntity toEntity(Team model);
 

@@ -7,7 +7,7 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface TournamentRegistrationMapper {
 
-    TournamentRegistration toModel(TournamentRegistrationEntity entity);
+    TournamentRegistrationModel toModel(TournamentRegistrationEntity entity);
 
     TournamentRegistrationEntity toEntity(TournamentRegistration model);
 

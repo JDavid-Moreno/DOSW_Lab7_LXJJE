@@ -7,7 +7,7 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface FileMapper {
 
-    File toModel(FileEntity entity);
+    FileModel toModel(FileEntity entity);
 
     FileEntity toEntity(File model);
 

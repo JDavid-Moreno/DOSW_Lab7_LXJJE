@@ -31,7 +31,7 @@ public class TeamEntity {
     @ManyToOne
     @JoinColumn(name = "tournament_id")
     private TournamentEntity tournament;
-
+    
     public TeamEntity() {
     }
     public FileEntity getShield() {

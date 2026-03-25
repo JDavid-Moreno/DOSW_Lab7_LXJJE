@@ -37,6 +37,7 @@ public class TournamentEntity {
     private UserEntity organizer;
     @OneToMany(mappedBy = "tournament")
     private List<TeamEntity> teams;
+    
     public TournamentEntity() {
         this.teams = new ArrayList<>();
     }

@@ -1,7 +1,7 @@
 package edu.eci.dosw.TechCup.service;
 
-import edu.eci.dosw.TechCup.model.Team;
 import edu.eci.dosw.TechCup.model.Tournament;
+import edu.eci.dosw.TechCup.model.TournamentRegistration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +20,7 @@ public class TournamentServiceTest implements TournamentService {
     }
 
     @Override
-    public List<Team> searchTournamentTeams(Long id) {
+    public List<TournamentRegistration> searchTournamentTeams(Long id) {
         Tournament tournament = tournaments.get(id);
         if (tournament != null) {
             return tournament.getTeams();

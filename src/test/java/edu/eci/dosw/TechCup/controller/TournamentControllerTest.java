@@ -2,6 +2,7 @@ package edu.eci.dosw.TechCup.controller;
 
 import edu.eci.dosw.TechCup.model.Team;
 import edu.eci.dosw.TechCup.model.Tournament;
+import edu.eci.dosw.TechCup.model.TournamentRegistration;
 import edu.eci.dosw.TechCup.service.TournamentService;
 
 import org.junit.jupiter.api.Test;
@@ -55,12 +56,12 @@ class TournamentControllerTest {
 
     @Test
     void shouldReturnTeams() {
-        List<Team> teams = List.of(new Team(), new Team());
+        List<TournamentRegistration> teams = List.of(new TournamentRegistration(), new TournamentRegistration());
 
         when(tournamentService.searchTournamentTeams(1L))
                 .thenReturn(teams);
 
-        ResponseEntity<List<Team>> response = controller.getTournamentTeams(1L);
+        ResponseEntity<List<TournamentRegistration>> response = controller.getTournamentTeams(1L);
 
         assertEquals(200, response.getStatusCodeValue());
         assertEquals(2, response.getBody().size());

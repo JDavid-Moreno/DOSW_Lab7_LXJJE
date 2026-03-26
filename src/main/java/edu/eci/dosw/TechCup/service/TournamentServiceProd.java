@@ -3,8 +3,8 @@ package edu.eci.dosw.TechCup.service;
 import edu.eci.dosw.TechCup.entity.TournamentEntity;
 import edu.eci.dosw.TechCup.exception.TournamentException;
 import edu.eci.dosw.TechCup.mapper.TournamentMapper;
-import edu.eci.dosw.TechCup.model.Team;
 import edu.eci.dosw.TechCup.model.Tournament;
+import edu.eci.dosw.TechCup.model.TournamentRegistration;
 import edu.eci.dosw.TechCup.model.TournamentState;
 import edu.eci.dosw.TechCup.repository.TournamentRepository;
 
@@ -48,7 +48,7 @@ public class TournamentServiceProd implements TournamentService {
     }
 
     @Transactional
-    public List<Team> searchTournamentTeams(Long id){
+    public List<TournamentRegistration> searchTournamentTeams(Long id){
 
         Optional<TournamentEntity> tournamentEntity =
                 tournamentRepository.findById(id);

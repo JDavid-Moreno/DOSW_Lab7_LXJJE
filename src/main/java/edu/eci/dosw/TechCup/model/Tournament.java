@@ -14,7 +14,7 @@ public class Tournament {
     private Integer numberTeams;
     private Float coast;
     private User organizator;
-    private List<Team> teams;
+    private List<TournamentRegistration> teams;
     public Tournament() {
         this.teams = new ArrayList<>();
     }
@@ -100,11 +100,11 @@ public class Tournament {
         this.organizator = organizator;
     }
 
-    public void setTeams(List<Team> teams) {
+    public void setTeams(List<TournamentRegistration> teams) {
         this.teams = teams;
     }
 
-    public List<Team> getTeams() {
+    public List<TournamentRegistration> getTeams() {
         return teams;
     }
 }

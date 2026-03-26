@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import edu.eci.dosw.TechCup.exception.TeamException;
 
 @Service
-public class TeamServiceProd implements TeamService {
+public class TeamServiceProd implements TeamService{
     private TeamRepository teamRepository;
     private TeamMapper teamMapper;
 

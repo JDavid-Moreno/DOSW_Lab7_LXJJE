@@ -11,7 +11,7 @@ public class TeamEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
+    @Column(unique = true, nullable = false)
     private String name;
     @ElementCollection
     @CollectionTable(
@@ -58,4 +58,7 @@ public class TeamEntity {
     public void setName(String name) {
         this.name = name;
     }
+
+    public TournamentEntity getTournament() { return tournament; }
+    public void setTournament(TournamentEntity tournament) { this.tournament = tournament; }
 }

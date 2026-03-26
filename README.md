@@ -199,6 +199,23 @@ TeamInvitation tiene un solo User a la que varias van dirigidas, y de 0 a muchos
 ## Database information
 ![database information](src/main/resources/docs/images/TablesDataBase.png)
 
+----
+## H2 TEST
+los test generados para h2 se encuentran guardados en la carpeta [repository](src/test/java/edu/eci/dosw/TechCup/repository/)
+
+Estos mismos subdivididos en test para Team, TeamMember, Tournament y User, cumpliendo con las funciones de guardar, consultar, relacionar entidades y eliminar/actualizar
+
+## Verificar pruebas
+
+Las pruebas funcionan correctamente y se ejecutan desde H2.
+
+### Test Execution
+![CompletedTest](src/main/resources/docs/images/TestH2.png)
+
+### H2 Confirmation
+![H2Execution](src/main/resources/docs/images/H2Execution.png)
+
+---
 ## Bibliografía
 
 Pivotal Software. (2023). Spring Boot Reference Documentation. Recuperado de https://spring.io

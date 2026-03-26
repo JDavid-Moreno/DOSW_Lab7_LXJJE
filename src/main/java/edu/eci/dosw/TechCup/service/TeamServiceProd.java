@@ -4,11 +4,13 @@ import edu.eci.dosw.TechCup.entity.TeamEntity;
 import edu.eci.dosw.TechCup.mapper.TeamMapper;
 import edu.eci.dosw.TechCup.model.Team;
 import edu.eci.dosw.TechCup.repository.TeamRepository;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import edu.eci.dosw.TechCup.exception.TeamException;
 
 @Service
+@Profile("prod")
 public class TeamServiceProd implements TeamService{
     private TeamRepository teamRepository;
     private TeamMapper teamMapper;

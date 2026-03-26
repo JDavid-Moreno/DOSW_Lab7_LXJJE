@@ -11,6 +11,7 @@ import edu.eci.dosw.TechCup.entity.TeamInvitationEntity;
 import edu.eci.dosw.TechCup.entity.TeamEntity;
 import edu.eci.dosw.TechCup.entity.UserEntity;
 import edu.eci.dosw.TechCup.mapper.TeamInvitationMapper;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import edu.eci.dosw.TechCup.exception.TeamInvitationException;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,6 +20,7 @@ import java.util.Optional;
 
 
 @Service
+@Profile("prod")
 public class TeamInvitationServiceProd implements TeamInvitationService {
     private TeamInvitationRepository teamInvitationRepository;
     private TeamInvitationMapper teamInvitationMapper;

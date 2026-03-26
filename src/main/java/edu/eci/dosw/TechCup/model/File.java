@@ -32,4 +32,24 @@ public class File {
         this.bytes = bytes;
         this.mime = mime;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setBytes(byte[] bytes) {
+        this.bytes = bytes;
+    }
+
+    public void setMime(String mime) {
+        this.mime = mime;
+    }
+
+    public void setLastMod(LocalDateTime lastMod) {
+        this.lastMod = lastMod;
+    }
 }

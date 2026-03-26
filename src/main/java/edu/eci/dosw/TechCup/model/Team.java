@@ -9,7 +9,7 @@ public class Team {
     private Long id;
     private String name;
     private List<String> colors;
-    private FileEntity shield;
+    private File shield;
 
     public String getName() {
         return name;
@@ -27,11 +27,11 @@ public class Team {
         this.colors = colors;
     }
 
-    public FileEntity getShield() {
+    public File getShield() {
         return shield;
     }
 
-    public void setShield(FileEntity shield) {
+    public void setShield(File shield) {
         this.shield = shield;
     }
 

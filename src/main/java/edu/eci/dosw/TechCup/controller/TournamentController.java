@@ -2,6 +2,7 @@ package edu.eci.dosw.TechCup.controller;
 
 import edu.eci.dosw.TechCup.model.Team;
 import edu.eci.dosw.TechCup.model.Tournament;
+import edu.eci.dosw.TechCup.model.TournamentRegistration;
 import edu.eci.dosw.TechCup.service.TournamentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,8 +29,8 @@ public class TournamentController {
     }
     @GetMapping("{id}/teams")
     @Operation(summary = "Obtener equipos del torneo", description = "Retorna los equipos asociados a un torneo")
-    public ResponseEntity<List<Team>> getTournamentTeams(@PathVariable Long id) {
-        List<Team> teams = tournamentService.searchTournamentTeams(id);
+    public ResponseEntity<List<TournamentRegistration>> getTournamentTeams(@PathVariable Long id) {
+        List<TournamentRegistration> teams = tournamentService.searchTournamentTeams(id);
         return ResponseEntity.ok(teams);
     }
     @PostMapping

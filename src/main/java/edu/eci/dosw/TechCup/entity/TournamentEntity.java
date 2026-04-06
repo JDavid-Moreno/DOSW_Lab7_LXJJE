@@ -1,5 +1,6 @@
 package edu.eci.dosw.TechCup.entity;
 
+import edu.eci.dosw.TechCup.model.TournamentRegistration;
 import edu.eci.dosw.TechCup.model.TournamentState;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -36,7 +37,7 @@ public class TournamentEntity {
     @JoinColumn(name = "captain_id", nullable = false)
     private UserEntity organizer;
     @OneToMany(mappedBy = "tournament")
-    private List<TeamEntity> teams;
+    private List<TournamentRegistrationEntity> teams;
     
     public TournamentEntity() {
         this.teams = new ArrayList<>();
@@ -59,7 +60,7 @@ public class TournamentEntity {
         return state;
     }
 
-    public List<TeamEntity> getTeams() {
+    public List<TournamentRegistrationEntity> getTeams() {
         return teams;
     }
 
@@ -127,7 +128,7 @@ public class TournamentEntity {
         this.coast = coast;
     }
 
-    public void setTeams(List<TeamEntity> teams) {
+    public void setTeams(List<TournamentRegistrationEntity> teams) {
         this.teams = teams;
     }
 }

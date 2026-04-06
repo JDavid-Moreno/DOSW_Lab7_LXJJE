@@ -23,7 +23,7 @@ public class TeamController {
         Team team = teamService.findById(id);
         return new ResponseEntity<>(team, HttpStatus.OK);
     }
-    @GetMapping("/{name}")
+    @GetMapping("/name/{name}")
     @Operation(summary = "Obtener equipo por nombre", description = "Retorna un equipo dado su nombre")
     public ResponseEntity<Team> get(@PathVariable String name) {
         Team team = teamService.findByName(name);

@@ -14,7 +14,7 @@ public class Tournament {
     private Integer numberTeams;
     private Float coast;
     private User organizator;
-    private List<Team> teams;
+    private List<TournamentRegistration> teams;
     public Tournament() {
         this.teams = new ArrayList<>();
     }
@@ -36,7 +36,75 @@ public class Tournament {
         return state;
     }
 
-    public List<Team> getTeams() {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public File getRegulation() {
+        return regulation;
+    }
+
+    public void setRegulation(File regulation) {
+        this.regulation = regulation;
+    }
+
+    public LocalDate getRegistrationClosingDate() {
+        return registrationClosingDate;
+    }
+
+    public void setRegistrationClosingDate(LocalDate registrationClosingDate) {
+        this.registrationClosingDate = registrationClosingDate;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
+    }
+
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(LocalDate endDate) {
+        this.endDate = endDate;
+    }
+
+    public Integer getNumberTeams() {
+        return numberTeams;
+    }
+
+    public void setNumberTeams(Integer numberTeams) {
+        this.numberTeams = numberTeams;
+    }
+
+    public Float getCoast() {
+        return coast;
+    }
+
+    public void setCoast(Float coast) {
+        this.coast = coast;
+    }
+
+    public User getOrganizator() {
+        return organizator;
+    }
+
+    public void setOrganizator(User organizator) {
+        this.organizator = organizator;
+    }
+
+    public void setTeams(List<TournamentRegistration> teams) {
+        this.teams = teams;
+    }
+
+    public List<TournamentRegistration> getTeams() {
         return teams;
     }
 }

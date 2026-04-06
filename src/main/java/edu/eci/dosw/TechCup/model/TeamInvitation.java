@@ -12,6 +12,22 @@ public class TeamInvitation {
     private User invited;
     private TeamMember invitedBy;
 
+    public User getInvited() {
+        return invited;
+    }
+
+    public void setInvited(User invited) {
+        this.invited = invited;
+    }
+
+    public TeamMember getInvitedBy() {
+        return invitedBy;
+    }
+
+    public void setInvitedBy(TeamMember invitedBy) {
+        this.invitedBy = invitedBy;
+    }
+
     public Long getId() {
         return id;
     }

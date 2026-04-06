@@ -27,10 +27,6 @@ public class TeamEntity {
     @OneToOne
     @JoinColumn(name = "shield_id")
     private FileEntity shield;
-
-    @ManyToOne
-    @JoinColumn(name = "tournament_id")
-    private TournamentEntity tournament;
     
     public TeamEntity() {
     }
@@ -58,7 +54,4 @@ public class TeamEntity {
     public void setName(String name) {
         this.name = name;
     }
-
-    public TournamentEntity getTournament() { return tournament; }
-    public void setTournament(TournamentEntity tournament) { this.tournament = tournament; }
 }

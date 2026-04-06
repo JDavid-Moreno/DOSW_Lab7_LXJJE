@@ -5,10 +5,14 @@ import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.List;
+import java.util.ArrayList;
 
 @Service
 @Profile("test")
@@ -58,4 +62,9 @@ public class UserServiceTest implements UserService {
             user.setState(state);
         }
     }
+    @Override
+    public List<User> getAllUsers() {
+        return new ArrayList<>();
+    }
+
 }

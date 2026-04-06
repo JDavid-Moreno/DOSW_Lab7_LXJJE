@@ -5915,3 +5915,889 @@ This generated password is for development use only. Your security configuration
 2026-04-06T13:39:42.945-05:00  INFO 19632 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-04-06T13:39:42.949-05:00  INFO 19632 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-04-06T13:39:43.009-05:00  INFO 19632 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T14:21:43.737-05:00  INFO 21080 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 21080 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T14:21:43.740-05:00  INFO 21080 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T14:21:45.554-05:00  INFO 21080 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T14:21:45.791-05:00  INFO 21080 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 220 ms. Found 7 JPA repository interfaces.
+2026-04-06T14:21:47.289-05:00  INFO 21080 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T14:21:47.319-05:00  INFO 21080 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T14:21:47.320-05:00  INFO 21080 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T14:21:47.487-05:00  INFO 21080 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T14:21:47.488-05:00  INFO 21080 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3650 ms
+2026-04-06T14:21:47.836-05:00  INFO 21080 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T14:21:48.026-05:00  INFO 21080 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T14:21:48.141-05:00  INFO 21080 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T14:21:48.689-05:00  INFO 21080 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T14:21:48.754-05:00  INFO 21080 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T14:21:49.447-05:00  INFO 21080 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@184751f3
+2026-04-06T14:21:49.451-05:00  INFO 21080 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T14:21:49.615-05:00  WARN 21080 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T14:21:51.804-05:00  INFO 21080 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T14:21:52.554-05:00  INFO 21080 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:21:53.483-05:00  WARN 21080 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T14:21:53.540-05:00  WARN 21080 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7a1663ca-0f28-4b8d-807f-646552e136c0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T14:21:54.007-05:00  INFO 21080 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59d7d574, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@94b5fe3, org.springframework.security.web.context.SecurityContextHolderFilter@4c231f62, org.springframework.security.web.header.HeaderWriterFilter@2220c5f7, org.springframework.web.filter.CorsFilter@4417755b, org.springframework.security.web.authentication.logout.LogoutFilter@1fd4850b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bfedfb7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d3194ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3811464b, org.springframework.security.web.access.ExceptionTranslationFilter@978475b, org.springframework.security.web.access.intercept.AuthorizationFilter@4e23ddf0]
+2026-04-06T14:21:54.572-05:00  INFO 21080 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T14:21:54.598-05:00  INFO 21080 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 11.549 seconds (process running for 12.138)
+2026-04-06T14:22:57.084-05:00  INFO 21080 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T14:22:57.097-05:00  INFO 21080 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T14:22:57.121-05:00  INFO 21080 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2026-04-06T14:22:57.360-05:00  INFO 21080 --- [TechCup] [http-nio-8080-exec-1] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T14:23:21.406-05:00  INFO 21080 --- [TechCup] [http-nio-8080-exec-3] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T14:24:10.776-05:00  INFO 21080 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:24:10.794-05:00  INFO 21080 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T14:24:10.836-05:00  INFO 21080 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T14:24:38.976-05:00  INFO 7760 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 7760 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T14:24:38.988-05:00  INFO 7760 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T14:24:41.872-05:00  INFO 7760 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T14:24:42.118-05:00  INFO 7760 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 218 ms. Found 7 JPA repository interfaces.
+2026-04-06T14:24:43.814-05:00  INFO 7760 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T14:24:43.870-05:00  INFO 7760 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T14:24:43.874-05:00  INFO 7760 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T14:24:44.077-05:00  INFO 7760 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T14:24:44.078-05:00  INFO 7760 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4868 ms
+2026-04-06T14:24:46.400-05:00  INFO 7760 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T14:24:46.560-05:00  INFO 7760 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T14:24:46.644-05:00  INFO 7760 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T14:24:48.774-05:00  INFO 7760 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T14:24:49.246-05:00  INFO 7760 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T14:24:49.761-05:00  INFO 7760 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6136e1fc
+2026-04-06T14:24:49.765-05:00  INFO 7760 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T14:24:49.881-05:00  WARN 7760 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T14:24:53.062-05:00  INFO 7760 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T14:24:54.160-05:00  INFO 7760 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:24:55.813-05:00  WARN 7760 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T14:24:55.892-05:00  WARN 7760 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0e8189fb-82a3-45d8-ac6f-098fa5c40d90
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T14:24:56.893-05:00  INFO 7760 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@162a5c4c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f0bf0ed, org.springframework.security.web.context.SecurityContextHolderFilter@4a561f7d, org.springframework.security.web.header.HeaderWriterFilter@539f2fec, org.springframework.web.filter.CorsFilter@6f9e6a85, org.springframework.security.web.authentication.logout.LogoutFilter@69d9d322, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1acd2a14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5432be12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e17a9e6, org.springframework.security.web.access.ExceptionTranslationFilter@2d5b549b, org.springframework.security.web.access.intercept.AuthorizationFilter@235d46b2]
+2026-04-06T14:24:58.151-05:00  INFO 7760 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T14:24:58.180-05:00  INFO 7760 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 20.861 seconds (process running for 22.015)
+2026-04-06T14:26:30.321-05:00  INFO 7760 --- [TechCup] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T14:26:30.335-05:00  INFO 7760 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T14:26:30.364-05:00  INFO 7760 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2026-04-06T14:26:30.761-05:00  INFO 7760 --- [TechCup] [http-nio-8080-exec-2] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T14:26:37.499-05:00  INFO 7760 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:26:37.505-05:00  INFO 7760 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T14:26:37.533-05:00  INFO 7760 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T14:27:11.533-05:00  INFO 21268 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 21268 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T14:27:11.552-05:00  INFO 21268 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T14:27:14.087-05:00  INFO 21268 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T14:27:14.309-05:00  INFO 21268 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 198 ms. Found 7 JPA repository interfaces.
+2026-04-06T14:27:15.610-05:00  INFO 21268 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T14:27:15.640-05:00  INFO 21268 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T14:27:15.641-05:00  INFO 21268 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T14:27:15.880-05:00  INFO 21268 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T14:27:15.887-05:00  INFO 21268 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4002 ms
+2026-04-06T14:27:16.456-05:00  INFO 21268 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T14:27:16.618-05:00  INFO 21268 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T14:27:16.700-05:00  INFO 21268 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T14:27:17.270-05:00  INFO 21268 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T14:27:17.334-05:00  INFO 21268 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T14:27:17.769-05:00  INFO 21268 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@667797f
+2026-04-06T14:27:17.772-05:00  INFO 21268 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T14:27:17.908-05:00  WARN 21268 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T14:27:20.761-05:00  INFO 21268 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T14:27:22.738-05:00  INFO 21268 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:27:23.805-05:00  WARN 21268 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T14:27:23.886-05:00  WARN 21268 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f19f30f3-a5ac-4530-9067-2d13698f677d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T14:27:24.455-05:00  INFO 21268 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@94b5fe3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4417755b, org.springframework.security.web.context.SecurityContextHolderFilter@6888746c, org.springframework.security.web.header.HeaderWriterFilter@5bb90b89, org.springframework.web.filter.CorsFilter@3811464b, org.springframework.security.web.authentication.logout.LogoutFilter@1db9d253, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d3194ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@393d4e34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f0a5848, org.springframework.security.web.access.ExceptionTranslationFilter@507187c1, org.springframework.security.web.access.intercept.AuthorizationFilter@4e00723b]
+2026-04-06T14:27:25.076-05:00  INFO 21268 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T14:27:25.103-05:00  INFO 21268 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 15.084 seconds (process running for 16.081)
+2026-04-06T14:27:40.552-05:00  INFO 21268 --- [TechCup] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T14:27:40.559-05:00  INFO 21268 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T14:27:40.587-05:00  INFO 21268 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2026-04-06T14:36:16.874-05:00  INFO 21268 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:36:16.926-05:00  INFO 21268 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T14:36:16.952-05:00  INFO 21268 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T14:37:02.157-05:00  INFO 16304 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 16304 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T14:37:02.159-05:00  INFO 16304 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T14:37:03.319-05:00  INFO 16304 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T14:37:03.454-05:00  INFO 16304 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 7 JPA repository interfaces.
+2026-04-06T14:37:04.145-05:00  INFO 16304 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T14:37:04.166-05:00  INFO 16304 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T14:37:04.166-05:00  INFO 16304 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T14:37:04.251-05:00  INFO 16304 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T14:37:04.251-05:00  INFO 16304 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2013 ms
+2026-04-06T14:37:04.425-05:00  INFO 16304 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T14:37:04.500-05:00  INFO 16304 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T14:37:04.544-05:00  INFO 16304 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T14:37:04.960-05:00  INFO 16304 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T14:37:05.044-05:00  INFO 16304 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T14:37:05.300-05:00  INFO 16304 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4536a715
+2026-04-06T14:37:05.302-05:00  INFO 16304 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T14:37:05.375-05:00  WARN 16304 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T14:37:07.314-05:00  INFO 16304 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T14:37:07.681-05:00  INFO 16304 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:37:08.521-05:00  WARN 16304 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T14:37:08.574-05:00  WARN 16304 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0cac4eb4-b466-4637-b3d3-c132344e5138
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T14:37:09.027-05:00  INFO 16304 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3507200d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4db10b9f, org.springframework.security.web.context.SecurityContextHolderFilter@1fd4850b, org.springframework.security.web.header.HeaderWriterFilter@3df7e309, org.springframework.web.filter.CorsFilter@7c4de811, org.springframework.security.web.authentication.logout.LogoutFilter@650a0b50, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1db7a4ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f5f892c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b2e841, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@443b9ebb, org.springframework.security.web.access.ExceptionTranslationFilter@280e4390, org.springframework.security.web.access.intercept.AuthorizationFilter@5f14eb51]
+2026-04-06T14:37:09.542-05:00  INFO 16304 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T14:37:09.558-05:00  INFO 16304 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.937 seconds (process running for 8.405)
+2026-04-06T14:37:21.828-05:00  INFO 16304 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T14:37:21.828-05:00  INFO 16304 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T14:37:21.828-05:00  INFO 16304 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-04-06T14:37:22.333-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-1] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:37:47.172-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:37:48.924-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-4] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:37:50.870-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:38:59.173-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-8] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:39:03.316-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-9] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:39:15.422-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-10] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:39:55.910-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:40:56.059-05:00  WARN 16304 --- [TechCup] [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:41:36.521-05:00  INFO 16304 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:41:36.530-05:00  INFO 16304 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T14:41:36.540-05:00  INFO 16304 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T14:41:47.874-05:00  INFO 19156 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 19156 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T14:41:47.878-05:00  INFO 19156 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T14:41:49.278-05:00  INFO 19156 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T14:41:49.413-05:00  INFO 19156 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 7 JPA repository interfaces.
+2026-04-06T14:41:50.046-05:00  INFO 19156 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T14:41:50.061-05:00  INFO 19156 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T14:41:50.062-05:00  INFO 19156 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T14:41:50.147-05:00  INFO 19156 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T14:41:50.147-05:00  INFO 19156 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2197 ms
+2026-04-06T14:41:50.326-05:00  INFO 19156 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T14:41:50.398-05:00  INFO 19156 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T14:41:50.443-05:00  INFO 19156 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T14:41:50.749-05:00  INFO 19156 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T14:41:50.809-05:00  INFO 19156 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T14:41:51.028-05:00  INFO 19156 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@9f0fc36
+2026-04-06T14:41:51.029-05:00  INFO 19156 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T14:41:51.080-05:00  WARN 19156 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T14:41:52.464-05:00  INFO 19156 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T14:41:52.730-05:00  INFO 19156 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:41:53.314-05:00  WARN 19156 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T14:41:53.348-05:00  WARN 19156 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: da2006ee-cb39-493a-81c6-21c498537c34
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T14:41:53.658-05:00  INFO 19156 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c0a8787, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65cf8da0, org.springframework.security.web.context.SecurityContextHolderFilter@601ca994, org.springframework.security.web.header.HeaderWriterFilter@a4e1ca7, org.springframework.web.filter.CorsFilter@823f978, org.springframework.security.web.authentication.logout.LogoutFilter@69d9d322, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f9e6a85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5432be12, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ee5fe1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6195ce27, org.springframework.security.web.access.ExceptionTranslationFilter@542c6165, org.springframework.security.web.access.intercept.AuthorizationFilter@48543f11]
+2026-04-06T14:41:54.149-05:00  INFO 19156 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T14:41:54.157-05:00  INFO 19156 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 6.741 seconds (process running for 7.16)
+2026-04-06T14:43:06.911-05:00  INFO 19156 --- [TechCup] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T14:43:06.912-05:00  INFO 19156 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T14:43:06.914-05:00  INFO 19156 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-06T14:43:07.290-05:00  WARN 19156 --- [TechCup] [http-nio-8080-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:48:23.614-05:00  INFO 19156 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:48:23.647-05:00  INFO 19156 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T14:48:23.663-05:00  INFO 19156 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T14:48:42.139-05:00  INFO 22808 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 22808 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T14:48:42.143-05:00  INFO 22808 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T14:48:43.245-05:00  INFO 22808 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T14:48:43.390-05:00  INFO 22808 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 7 JPA repository interfaces.
+2026-04-06T14:48:44.034-05:00  INFO 22808 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T14:48:44.053-05:00  INFO 22808 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T14:48:44.054-05:00  INFO 22808 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T14:48:44.136-05:00  INFO 22808 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T14:48:44.136-05:00  INFO 22808 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1885 ms
+2026-04-06T14:48:44.323-05:00  INFO 22808 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T14:48:44.397-05:00  INFO 22808 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T14:48:44.452-05:00  INFO 22808 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T14:48:44.798-05:00  INFO 22808 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T14:48:44.851-05:00  INFO 22808 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T14:48:45.111-05:00  INFO 22808 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10dfa7ef
+2026-04-06T14:48:45.113-05:00  INFO 22808 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T14:48:45.193-05:00  WARN 22808 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T14:48:47.363-05:00  INFO 22808 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T14:48:47.799-05:00  INFO 22808 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:48:48.399-05:00  WARN 22808 --- [TechCup] [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-04-06T14:48:48.785-05:00  WARN 22808 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T14:48:49.313-05:00  INFO 22808 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a0f1f9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18356d9e, org.springframework.security.web.context.SecurityContextHolderFilter@701c413, org.springframework.security.web.header.HeaderWriterFilter@25814d3c, org.springframework.web.filter.CorsFilter@5e97da56, org.springframework.security.web.authentication.logout.LogoutFilter@f83616, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@397b5b2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63f16350, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@280e4390, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e8f3b76, org.springframework.security.web.access.ExceptionTranslationFilter@3ac76ad9, org.springframework.security.web.access.intercept.AuthorizationFilter@5ab70df7]
+2026-04-06T14:48:49.777-05:00  INFO 22808 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T14:48:49.792-05:00  INFO 22808 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 8.191 seconds (process running for 8.933)
+2026-04-06T14:49:06.200-05:00  INFO 22808 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T14:49:06.202-05:00  INFO 22808 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T14:49:06.205-05:00  INFO 22808 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-06T14:49:06.714-05:00  WARN 22808 --- [TechCup] [http-nio-8080-exec-1] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:49:09.443-05:00  WARN 22808 --- [TechCup] [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:49:54.087-05:00  WARN 22808 --- [TechCup] [http-nio-8080-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:49:56.267-05:00  WARN 22808 --- [TechCup] [http-nio-8080-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T14:51:30.175-05:00  INFO 22808 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:51:30.183-05:00  INFO 22808 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T14:51:30.191-05:00  INFO 22808 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T14:53:01.778-05:00  INFO 18292 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 18292 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T14:53:01.780-05:00  INFO 18292 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T14:53:02.921-05:00  INFO 18292 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T14:53:03.076-05:00  INFO 18292 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 7 JPA repository interfaces.
+2026-04-06T14:53:03.927-05:00  INFO 18292 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T14:53:03.945-05:00  INFO 18292 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T14:53:03.946-05:00  INFO 18292 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T14:53:04.032-05:00  INFO 18292 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T14:53:04.033-05:00  INFO 18292 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2186 ms
+2026-04-06T14:53:04.210-05:00  INFO 18292 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T14:53:04.289-05:00  INFO 18292 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T14:53:04.334-05:00  INFO 18292 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T14:53:04.601-05:00  INFO 18292 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T14:53:04.636-05:00  INFO 18292 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T14:53:04.844-05:00  INFO 18292 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1805383
+2026-04-06T14:53:04.846-05:00  INFO 18292 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T14:53:04.899-05:00  WARN 18292 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T14:53:06.255-05:00  INFO 18292 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T14:53:06.513-05:00  INFO 18292 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T14:53:07.056-05:00  WARN 18292 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T14:53:07.699-05:00  INFO 18292 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f4b7a2e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@334ac669, org.springframework.security.web.context.SecurityContextHolderFilter@6195ce27, org.springframework.security.web.header.HeaderWriterFilter@c0a8787, org.springframework.web.filter.CorsFilter@77430c79, org.springframework.security.web.authentication.logout.LogoutFilter@373c8f35, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1d160161, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2040732f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@373fb666, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@506654fa, org.springframework.security.web.access.ExceptionTranslationFilter@cda988, org.springframework.security.web.access.intercept.AuthorizationFilter@f3e6876]
+2026-04-06T14:53:08.019-05:00  INFO 18292 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T14:53:08.028-05:00  INFO 18292 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 6.711 seconds (process running for 7.151)
+2026-04-06T14:53:32.658-05:00  INFO 18292 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T14:53:32.659-05:00  INFO 18292 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T14:53:32.660-05:00  INFO 18292 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-06T14:53:33.467-05:00  INFO 18292 --- [TechCup] [http-nio-8080-exec-1] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T15:01:08.695-05:00  INFO 18292 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:01:08.738-05:00  INFO 18292 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:01:08.761-05:00  INFO 18292 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T15:02:36.345-05:00  INFO 5408 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 5408 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T15:02:36.348-05:00  INFO 5408 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T15:02:37.374-05:00  INFO 5408 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T15:02:37.479-05:00  INFO 5408 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 7 JPA repository interfaces.
+2026-04-06T15:02:38.075-05:00  INFO 5408 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T15:02:38.089-05:00  INFO 5408 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T15:02:38.091-05:00  INFO 5408 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T15:02:38.170-05:00  INFO 5408 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T15:02:38.171-05:00  INFO 5408 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1752 ms
+2026-04-06T15:02:38.355-05:00  INFO 5408 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T15:02:38.427-05:00  INFO 5408 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T15:02:38.474-05:00  INFO 5408 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T15:02:38.738-05:00  INFO 5408 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T15:02:38.773-05:00  INFO 5408 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T15:02:38.979-05:00  INFO 5408 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30fbc23
+2026-04-06T15:02:38.981-05:00  INFO 5408 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T15:02:39.031-05:00  WARN 5408 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T15:02:40.328-05:00  INFO 5408 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T15:02:40.609-05:00  INFO 5408 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:02:41.294-05:00  WARN 5408 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T15:02:42.012-05:00  INFO 5408 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c9e7af2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48cbb4c5, org.springframework.security.web.context.SecurityContextHolderFilter@7641c4e7, org.springframework.security.web.header.HeaderWriterFilter@2e17a9e6, org.springframework.web.filter.CorsFilter@af04d6d, org.springframework.security.web.authentication.logout.LogoutFilter@d98ce13, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1415f18d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55e3b64d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52f71d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2740585b, org.springframework.security.web.access.ExceptionTranslationFilter@5f0bf0ed, org.springframework.security.web.access.intercept.AuthorizationFilter@c651286]
+2026-04-06T15:02:42.323-05:00  INFO 5408 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T15:02:42.331-05:00  INFO 5408 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 6.628 seconds (process running for 7.038)
+2026-04-06T15:03:00.044-05:00  INFO 5408 --- [TechCup] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T15:03:00.063-05:00  INFO 5408 --- [TechCup] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T15:03:00.153-05:00  INFO 5408 --- [TechCup] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-04-06T15:03:01.781-05:00  INFO 5408 --- [TechCup] [http-nio-8080-exec-3] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T15:04:30.161-05:00  INFO 5408 --- [TechCup] [http-nio-8080-exec-6] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T15:05:05.905-05:00  INFO 5408 --- [TechCup] [http-nio-8080-exec-8] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T15:06:26.591-05:00  INFO 5408 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:06:26.601-05:00  INFO 5408 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:06:26.613-05:00  INFO 5408 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T15:06:49.079-05:00  INFO 1084 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 1084 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T15:06:49.081-05:00  INFO 1084 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T15:06:50.517-05:00  INFO 1084 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T15:06:50.662-05:00  INFO 1084 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 7 JPA repository interfaces.
+2026-04-06T15:06:51.303-05:00  INFO 1084 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T15:06:51.321-05:00  INFO 1084 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T15:06:51.322-05:00  INFO 1084 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T15:06:51.400-05:00  INFO 1084 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T15:06:51.401-05:00  INFO 1084 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2258 ms
+2026-04-06T15:06:51.574-05:00  INFO 1084 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T15:06:51.654-05:00  INFO 1084 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T15:06:51.703-05:00  INFO 1084 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T15:06:52.017-05:00  INFO 1084 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T15:06:52.054-05:00  INFO 1084 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T15:06:52.278-05:00  INFO 1084 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44fb6ebd
+2026-04-06T15:06:52.281-05:00  INFO 1084 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T15:06:52.331-05:00  WARN 1084 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T15:06:53.818-05:00  INFO 1084 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T15:06:54.137-05:00  INFO 1084 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:06:54.689-05:00  WARN 1084 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T15:06:54.712-05:00  WARN 1084 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 94ae85aa-a159-4d7d-8dd2-42e59166b2ae
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T15:06:55.430-05:00  INFO 1084 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7fb313e3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@771ede0d, org.springframework.security.web.context.SecurityContextHolderFilter@28721794, org.springframework.security.web.header.HeaderWriterFilter@6cfe32cd, org.springframework.web.filter.CorsFilter@1fd73dcb, org.springframework.security.web.authentication.logout.LogoutFilter@6c9e7af2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e04c89d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4db10b9f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c4de811, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54c697c, org.springframework.security.web.access.ExceptionTranslationFilter@5e97da56, org.springframework.security.web.access.intercept.AuthorizationFilter@78de0f6f]
+2026-04-06T15:06:55.756-05:00  INFO 1084 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T15:06:55.764-05:00  INFO 1084 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.189 seconds (process running for 7.634)
+2026-04-06T15:07:42.644-05:00  INFO 1084 --- [TechCup] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T15:07:42.647-05:00  INFO 1084 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T15:07:42.649-05:00  INFO 1084 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-06T15:07:43.085-05:00  WARN 1084 --- [TechCup] [http-nio-8080-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T15:09:48.399-05:00  INFO 1084 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:09:48.406-05:00  INFO 1084 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:09:48.420-05:00  INFO 1084 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T15:25:58.773-05:00  INFO 23476 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 23476 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T15:25:58.776-05:00  INFO 23476 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T15:25:59.831-05:00  INFO 23476 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T15:25:59.954-05:00  INFO 23476 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 7 JPA repository interfaces.
+2026-04-06T15:26:00.602-05:00  INFO 23476 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T15:26:00.624-05:00  INFO 23476 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T15:26:00.625-05:00  INFO 23476 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T15:26:00.726-05:00  INFO 23476 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T15:26:00.727-05:00  INFO 23476 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1873 ms
+2026-04-06T15:26:00.924-05:00  INFO 23476 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T15:26:01.000-05:00  INFO 23476 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T15:26:01.046-05:00  INFO 23476 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T15:26:01.296-05:00  INFO 23476 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T15:26:01.346-05:00  INFO 23476 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T15:26:01.599-05:00  INFO 23476 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@184751f3
+2026-04-06T15:26:01.600-05:00  INFO 23476 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T15:26:01.678-05:00  WARN 23476 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T15:26:03.031-05:00  INFO 23476 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T15:26:03.412-05:00  INFO 23476 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:26:04.042-05:00  WARN 23476 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T15:26:04.103-05:00  WARN 23476 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b7a4ad3a-f8f1-4fb5-af81-3ecf1e91d11c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T15:26:04.420-05:00  INFO 23476 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7cb4d4ee, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44ec6637, org.springframework.security.web.context.SecurityContextHolderFilter@34dda1b4, org.springframework.security.web.header.HeaderWriterFilter@3c4231e5, org.springframework.web.filter.CorsFilter@5a0b550a, org.springframework.security.web.authentication.logout.LogoutFilter@701c413, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cb4ba80, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@978475b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3390621a, org.springframework.security.web.access.ExceptionTranslationFilter@5ae22651, org.springframework.security.web.access.intercept.AuthorizationFilter@7a085d02]
+2026-04-06T15:26:04.769-05:00  INFO 23476 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T15:26:04.777-05:00  INFO 23476 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 6.487 seconds (process running for 6.921)
+2026-04-06T15:30:33.326-05:00  INFO 23476 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T15:30:33.380-05:00  INFO 23476 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T15:30:33.531-05:00  INFO 23476 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 141 ms
+2026-04-06T15:30:33.861-05:00  INFO 23476 --- [TechCup] [http-nio-8080-exec-1] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T15:33:24.767-05:00  INFO 23476 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:33:24.800-05:00  INFO 23476 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:33:24.820-05:00  INFO 23476 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T15:33:44.413-05:00  INFO 20500 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 20500 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T15:33:44.416-05:00  INFO 20500 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T15:33:45.461-05:00  INFO 20500 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T15:33:45.581-05:00  INFO 20500 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 7 JPA repository interfaces.
+2026-04-06T15:33:46.527-05:00  INFO 20500 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T15:33:46.549-05:00  INFO 20500 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T15:33:46.550-05:00  INFO 20500 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T15:33:46.636-05:00  INFO 20500 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T15:33:46.636-05:00  INFO 20500 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2155 ms
+2026-04-06T15:33:46.838-05:00  INFO 20500 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T15:33:46.921-05:00  INFO 20500 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T15:33:46.973-05:00  INFO 20500 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T15:33:47.237-05:00  INFO 20500 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T15:33:47.279-05:00  INFO 20500 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T15:33:47.510-05:00  INFO 20500 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52ca0ad4
+2026-04-06T15:33:47.511-05:00  INFO 20500 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T15:33:47.574-05:00  WARN 20500 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T15:33:49.095-05:00  INFO 20500 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T15:33:49.415-05:00  INFO 20500 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:33:50.257-05:00  WARN 20500 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T15:33:50.318-05:00  WARN 20500 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 64233352-0526-418d-8cb0-44f4cd053763
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T15:33:50.851-05:00  INFO 20500 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2df7766b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@235d46b2, org.springframework.security.web.context.SecurityContextHolderFilter@542c6165, org.springframework.security.web.header.HeaderWriterFilter@1f3310fc, org.springframework.web.filter.CorsFilter@1644cc2d, org.springframework.security.web.authentication.logout.LogoutFilter@7cb4d4ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a4e1ca7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d466ef9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f83616, org.springframework.security.web.access.ExceptionTranslationFilter@393d4e34, org.springframework.security.web.access.intercept.AuthorizationFilter@732fa176]
+2026-04-06T15:33:51.380-05:00  INFO 20500 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T15:33:51.400-05:00  INFO 20500 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.463 seconds (process running for 7.885)
+2026-04-06T15:34:22.112-05:00  INFO 20500 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T15:34:22.113-05:00  INFO 20500 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T15:34:22.115-05:00  INFO 20500 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-06T15:38:09.988-05:00  INFO 20500 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:38:10.004-05:00  INFO 20500 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:38:10.019-05:00  INFO 20500 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T15:38:37.197-05:00  INFO 21884 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 21884 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T15:38:37.200-05:00  INFO 21884 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T15:38:38.515-05:00  INFO 21884 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T15:38:38.640-05:00  INFO 21884 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 7 JPA repository interfaces.
+2026-04-06T15:38:39.303-05:00  INFO 21884 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T15:38:39.322-05:00  INFO 21884 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T15:38:39.323-05:00  INFO 21884 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T15:38:39.411-05:00  INFO 21884 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T15:38:39.412-05:00  INFO 21884 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2125 ms
+2026-04-06T15:38:39.608-05:00  INFO 21884 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T15:38:39.685-05:00  INFO 21884 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T15:38:39.733-05:00  INFO 21884 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T15:38:40.190-05:00  INFO 21884 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T15:38:40.264-05:00  INFO 21884 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T15:38:40.577-05:00  INFO 21884 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e848aea
+2026-04-06T15:38:40.579-05:00  INFO 21884 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T15:38:40.667-05:00  WARN 21884 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T15:38:42.079-05:00  INFO 21884 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T15:38:42.364-05:00  INFO 21884 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:38:42.958-05:00  WARN 21884 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T15:38:42.997-05:00  WARN 21884 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2d766cdb-181c-40d9-bc42-da2bc35cab92
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T15:38:43.326-05:00  INFO 21884 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@397b5b2d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2040732f, org.springframework.security.web.context.SecurityContextHolderFilter@2b30b25f, org.springframework.security.web.header.HeaderWriterFilter@1acd2a14, org.springframework.web.filter.CorsFilter@373fb666, org.springframework.security.web.authentication.logout.LogoutFilter@59d7d574, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7641c4e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@195d4780, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18c95fbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7894a250, org.springframework.security.web.access.ExceptionTranslationFilter@4a561f7d, org.springframework.security.web.access.intercept.AuthorizationFilter@65cf8da0]
+2026-04-06T15:38:43.672-05:00  INFO 21884 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T15:38:43.685-05:00  INFO 21884 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.274 seconds (process running for 7.952)
+2026-04-06T15:39:13.090-05:00  INFO 21884 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T15:39:13.092-05:00  INFO 21884 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T15:39:13.095-05:00  INFO 21884 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-06T15:39:13.768-05:00  WARN 21884 --- [TechCup] [http-nio-8080-exec-1] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T15:40:08.472-05:00  WARN 21884 --- [TechCup] [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T15:40:17.239-05:00  WARN 21884 --- [TechCup] [http-nio-8080-exec-4] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T15:41:31.411-05:00  WARN 21884 --- [TechCup] [http-nio-8080-exec-7] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T15:43:21.750-05:00  INFO 21884 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:43:21.786-05:00  INFO 21884 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:43:21.808-05:00  INFO 21884 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T15:44:10.411-05:00  INFO 12552 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 12552 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T15:44:10.416-05:00  INFO 12552 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T15:44:12.136-05:00  INFO 12552 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T15:44:12.285-05:00  INFO 12552 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 7 JPA repository interfaces.
+2026-04-06T15:44:12.939-05:00  INFO 12552 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T15:44:12.956-05:00  INFO 12552 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T15:44:12.957-05:00  INFO 12552 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T15:44:13.042-05:00  INFO 12552 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T15:44:13.043-05:00  INFO 12552 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2534 ms
+2026-04-06T15:44:13.230-05:00  INFO 12552 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T15:44:13.402-05:00  INFO 12552 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T15:44:13.445-05:00  INFO 12552 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T15:44:13.718-05:00  INFO 12552 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T15:44:13.751-05:00  INFO 12552 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T15:44:13.978-05:00  INFO 12552 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@738a815c
+2026-04-06T15:44:13.980-05:00  INFO 12552 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T15:44:14.040-05:00  WARN 12552 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T15:44:15.320-05:00  INFO 12552 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T15:44:15.652-05:00  INFO 12552 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:44:15.692-05:00  WARN 12552 --- [TechCup] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationController' defined in file [C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes\edu\eci\dosw\TechCup\controller\AuthenticationController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authenticationServiceProd' defined in file [C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes\edu\eci\dosw\TechCup\service\AuthenticationServiceProd.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-04-06T15:44:15.695-05:00  INFO 12552 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:44:15.717-05:00  INFO 12552 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:44:15.774-05:00  INFO 12552 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T15:44:15.790-05:00  INFO 12552 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-06T15:44:15.809-05:00  INFO 12552 --- [TechCup] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-06T15:44:15.872-05:00 ERROR 12552 --- [TechCup] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in edu.eci.dosw.TechCup.service.AuthenticationServiceProd required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2026-04-06T15:50:02.030-05:00  INFO 21168 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 21168 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T15:50:02.032-05:00  INFO 21168 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T15:50:03.378-05:00  INFO 21168 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T15:50:03.551-05:00  INFO 21168 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 7 JPA repository interfaces.
+2026-04-06T15:50:04.377-05:00  INFO 21168 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T15:50:04.401-05:00  INFO 21168 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T15:50:04.403-05:00  INFO 21168 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T15:50:04.518-05:00  INFO 21168 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T15:50:04.519-05:00  INFO 21168 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2410 ms
+2026-04-06T15:50:04.777-05:00  INFO 21168 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T15:50:04.889-05:00  INFO 21168 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T15:50:04.976-05:00  INFO 21168 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T15:50:05.479-05:00  INFO 21168 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T15:50:05.526-05:00  INFO 21168 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T15:50:05.788-05:00  INFO 21168 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52ca0ad4
+2026-04-06T15:50:05.790-05:00  INFO 21168 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T15:50:05.844-05:00  WARN 21168 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T15:50:07.283-05:00  INFO 21168 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T15:50:07.616-05:00  INFO 21168 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:50:08.272-05:00  WARN 21168 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T15:50:08.319-05:00  WARN 21168 --- [TechCup] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 13ac57d0-3b83-4587-aaba-287544750ca2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T15:50:08.720-05:00  INFO 21168 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6764201e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a3d52a0, org.springframework.security.web.context.SecurityContextHolderFilter@436103b1, org.springframework.security.web.header.HeaderWriterFilter@3ac76ad9, org.springframework.web.filter.CorsFilter@7a0f1f9d, org.springframework.security.web.authentication.logout.LogoutFilter@235d46b2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@823f978, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@701c413, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28468162, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18356d9e, org.springframework.security.web.access.ExceptionTranslationFilter@1bb3e150, org.springframework.security.web.access.intercept.AuthorizationFilter@2fb24ad8]
+2026-04-06T15:50:09.087-05:00  INFO 21168 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T15:50:09.095-05:00  INFO 21168 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.58 seconds (process running for 8.001)
+2026-04-06T15:50:58.731-05:00  INFO 21168 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T15:50:58.732-05:00  INFO 21168 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T15:50:58.738-05:00  INFO 21168 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-04-06T15:50:58.835-05:00  INFO 21168 --- [TechCup] [http-nio-8080-exec-1] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios
+2026-04-06T15:53:42.396-05:00  INFO 21168 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T15:53:42.417-05:00  INFO 21168 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T15:53:42.435-05:00  INFO 21168 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T16:01:39.243-05:00  INFO 23876 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 23876 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T16:01:39.248-05:00  INFO 23876 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T16:01:40.877-05:00  INFO 23876 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T16:01:41.041-05:00  INFO 23876 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152 ms. Found 7 JPA repository interfaces.
+2026-04-06T16:01:42.084-05:00  INFO 23876 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T16:01:42.115-05:00  INFO 23876 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T16:01:42.116-05:00  INFO 23876 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T16:01:42.255-05:00  INFO 23876 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T16:01:42.255-05:00  INFO 23876 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2911 ms
+2026-04-06T16:01:42.574-05:00  INFO 23876 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T16:01:42.714-05:00  INFO 23876 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T16:01:42.786-05:00  INFO 23876 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T16:01:44.941-05:00  INFO 23876 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T16:01:44.985-05:00  INFO 23876 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T16:01:45.258-05:00  INFO 23876 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5889fc44
+2026-04-06T16:01:45.260-05:00  INFO 23876 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T16:01:45.335-05:00  WARN 23876 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T16:01:46.729-05:00  INFO 23876 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T16:01:47.024-05:00  INFO 23876 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:01:47.621-05:00  WARN 23876 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T16:01:47.998-05:00  INFO 23876 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f31cf8f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28721794, org.springframework.security.web.context.SecurityContextHolderFilter@55f4ec04, org.springframework.security.web.header.HeaderWriterFilter@280e4390, org.springframework.web.filter.CorsFilter@3507200d, org.springframework.security.web.authentication.logout.LogoutFilter@6a175162, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72e9f0f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fd4850b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1db9d253, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4db10b9f, org.springframework.security.web.access.ExceptionTranslationFilter@28468162, org.springframework.security.web.access.intercept.AuthorizationFilter@6e8f3b76]
+2026-04-06T16:01:48.362-05:00  INFO 23876 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T16:01:48.375-05:00  INFO 23876 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 9.864 seconds (process running for 10.501)
+2026-04-06T16:02:47.403-05:00  INFO 23876 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T16:02:47.403-05:00  INFO 23876 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T16:02:47.403-05:00  INFO 23876 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-04-06T16:02:47.771-05:00  WARN 23876 --- [TechCup] [http-nio-8080-exec-1] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T16:02:50.486-05:00  WARN 23876 --- [TechCup] [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T16:02:51.501-05:00  WARN 23876 --- [TechCup] [http-nio-8080-exec-4] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T16:02:53.276-05:00  WARN 23876 --- [TechCup] [http-nio-8080-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T16:05:25.788-05:00  INFO 23876 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:05:25.809-05:00  INFO 23876 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T16:05:25.823-05:00  INFO 23876 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T16:05:39.087-05:00  INFO 21864 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 21864 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T16:05:39.091-05:00  INFO 21864 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T16:05:42.771-05:00  INFO 21864 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T16:05:42.960-05:00  INFO 21864 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 7 JPA repository interfaces.
+2026-04-06T16:05:44.692-05:00  INFO 21864 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T16:05:44.727-05:00  INFO 21864 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T16:05:44.728-05:00  INFO 21864 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T16:05:44.867-05:00  INFO 21864 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T16:05:44.868-05:00  INFO 21864 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5689 ms
+2026-04-06T16:05:45.202-05:00  INFO 21864 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T16:05:45.363-05:00  INFO 21864 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T16:05:45.443-05:00  INFO 21864 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T16:05:45.946-05:00  INFO 21864 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T16:05:46.013-05:00  INFO 21864 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T16:05:46.378-05:00  INFO 21864 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1736c1e4
+2026-04-06T16:05:46.380-05:00  INFO 21864 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T16:05:46.455-05:00  WARN 21864 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T16:05:48.693-05:00  INFO 21864 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T16:05:48.999-05:00  INFO 21864 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:05:49.635-05:00  WARN 21864 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T16:05:50.040-05:00  INFO 21864 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3fe59f84, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38eafdab, org.springframework.security.web.context.SecurityContextHolderFilter@4e23ddf0, org.springframework.security.web.header.HeaderWriterFilter@5a0b550a, org.springframework.web.filter.CorsFilter@373c8f35, org.springframework.security.web.authentication.logout.LogoutFilter@7894a250, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7c4de811, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e305953, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59d7d574, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d86b636, org.springframework.security.web.access.ExceptionTranslationFilter@7cb4d4ee, org.springframework.security.web.access.intercept.AuthorizationFilter@2f650dae]
+2026-04-06T16:05:50.497-05:00  INFO 21864 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T16:05:50.508-05:00  INFO 21864 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 12.234 seconds (process running for 12.896)
+2026-04-06T16:06:08.734-05:00  INFO 21864 --- [TechCup] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T16:06:08.735-05:00  INFO 21864 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T16:06:08.737-05:00  INFO 21864 --- [TechCup] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-06T16:06:54.577-05:00  INFO 21864 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:06:54.585-05:00  INFO 21864 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T16:06:54.596-05:00  INFO 21864 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T16:07:05.577-05:00  INFO 11728 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 11728 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T16:07:05.584-05:00  INFO 11728 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T16:07:07.124-05:00  INFO 11728 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T16:07:07.232-05:00  INFO 11728 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 7 JPA repository interfaces.
+2026-04-06T16:07:07.956-05:00  INFO 11728 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T16:07:07.972-05:00  INFO 11728 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T16:07:07.973-05:00  INFO 11728 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T16:07:08.059-05:00  INFO 11728 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T16:07:08.059-05:00  INFO 11728 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2393 ms
+2026-04-06T16:07:08.267-05:00  INFO 11728 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T16:07:08.349-05:00  INFO 11728 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T16:07:08.399-05:00  INFO 11728 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T16:07:08.693-05:00  INFO 11728 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T16:07:08.728-05:00  INFO 11728 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T16:07:08.962-05:00  INFO 11728 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@fabef2e
+2026-04-06T16:07:08.965-05:00  INFO 11728 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T16:07:09.090-05:00  WARN 11728 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T16:07:10.509-05:00  INFO 11728 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T16:07:10.830-05:00  INFO 11728 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:07:11.472-05:00  WARN 11728 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T16:07:11.917-05:00  INFO 11728 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e92e9a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c0a8787, org.springframework.security.web.context.SecurityContextHolderFilter@4a561f7d, org.springframework.security.web.header.HeaderWriterFilter@539f2fec, org.springframework.web.filter.CorsFilter@65cf8da0, org.springframework.security.web.authentication.logout.LogoutFilter@3390621a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f0bf0ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1acd2a14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5432be12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@823f978, org.springframework.security.web.access.ExceptionTranslationFilter@2d5b549b, org.springframework.security.web.access.intercept.AuthorizationFilter@7d31fb6c]
+2026-04-06T16:07:12.345-05:00  INFO 11728 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T16:07:12.359-05:00  INFO 11728 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.363 seconds (process running for 7.81)
+2026-04-06T16:07:22.297-05:00  INFO 11728 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T16:07:22.299-05:00  INFO 11728 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T16:07:22.302-05:00  INFO 11728 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-06T16:08:16.901-05:00  INFO 11728 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:08:16.933-05:00  INFO 11728 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T16:08:16.981-05:00  INFO 11728 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T16:08:35.694-05:00  INFO 19992 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 19992 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T16:08:35.697-05:00  INFO 19992 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T16:08:37.198-05:00  INFO 19992 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T16:08:37.344-05:00  INFO 19992 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 7 JPA repository interfaces.
+2026-04-06T16:08:38.198-05:00  INFO 19992 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T16:08:38.227-05:00  INFO 19992 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T16:08:38.230-05:00  INFO 19992 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T16:08:38.383-05:00  INFO 19992 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T16:08:38.384-05:00  INFO 19992 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2600 ms
+2026-04-06T16:08:38.699-05:00  INFO 19992 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T16:08:38.819-05:00  INFO 19992 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T16:08:38.912-05:00  INFO 19992 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T16:08:39.506-05:00  INFO 19992 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T16:08:39.579-05:00  INFO 19992 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T16:08:39.873-05:00  INFO 19992 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ab9e43e
+2026-04-06T16:08:39.877-05:00  INFO 19992 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T16:08:39.947-05:00  WARN 19992 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T16:08:42.050-05:00  INFO 19992 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T16:08:42.821-05:00  INFO 19992 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:08:43.441-05:00  WARN 19992 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T16:08:43.820-05:00  INFO 19992 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52f71d2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d31fb6c, org.springframework.security.web.context.SecurityContextHolderFilter@542c6165, org.springframework.security.web.header.HeaderWriterFilter@1f3310fc, org.springframework.web.filter.CorsFilter@48543f11, org.springframework.security.web.authentication.logout.LogoutFilter@7842260f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@235d46b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a4e1ca7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d466ef9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cda988, org.springframework.security.web.access.ExceptionTranslationFilter@393d4e34, org.springframework.security.web.access.intercept.AuthorizationFilter@7641c4e7]
+2026-04-06T16:08:44.169-05:00  INFO 19992 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T16:08:44.179-05:00  INFO 19992 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 8.976 seconds (process running for 9.444)
+2026-04-06T16:08:55.283-05:00  INFO 19992 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T16:08:55.283-05:00  INFO 19992 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T16:08:55.285-05:00  INFO 19992 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-04-06T16:08:55.984-05:00  WARN 19992 --- [TechCup] [http-nio-8080-exec-1] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T16:09:13.865-05:00  INFO 19992 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:09:13.868-05:00  INFO 19992 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T16:09:13.879-05:00  INFO 19992 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T16:09:30.273-05:00  INFO 9120 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 9120 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T16:09:30.276-05:00  INFO 9120 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T16:09:31.660-05:00  INFO 9120 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T16:09:31.810-05:00  INFO 9120 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 7 JPA repository interfaces.
+2026-04-06T16:09:32.568-05:00  INFO 9120 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T16:09:32.587-05:00  INFO 9120 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T16:09:32.588-05:00  INFO 9120 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T16:09:32.672-05:00  INFO 9120 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T16:09:32.673-05:00  INFO 9120 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2315 ms
+2026-04-06T16:09:32.865-05:00  INFO 9120 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T16:09:32.944-05:00  INFO 9120 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T16:09:32.994-05:00  INFO 9120 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T16:09:33.284-05:00  INFO 9120 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T16:09:33.330-05:00  INFO 9120 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T16:09:33.585-05:00  INFO 9120 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ce561cc
+2026-04-06T16:09:33.587-05:00  INFO 9120 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T16:09:33.647-05:00  WARN 9120 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T16:09:35.187-05:00  INFO 9120 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T16:09:35.513-05:00  INFO 9120 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:09:36.066-05:00  WARN 9120 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T16:09:36.451-05:00  INFO 9120 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38affd02, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72e9f0f7, org.springframework.security.web.context.SecurityContextHolderFilter@1bb3e150, org.springframework.security.web.header.HeaderWriterFilter@195d4780, org.springframework.web.filter.CorsFilter@2fb24ad8, org.springframework.security.web.authentication.logout.LogoutFilter@c6db00d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@48543f11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ac76ad9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@213c812a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1db7a4ae, org.springframework.security.web.access.ExceptionTranslationFilter@2b30b25f, org.springframework.security.web.access.intercept.AuthorizationFilter@373fb666]
+2026-04-06T16:09:36.834-05:00  INFO 9120 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T16:09:36.850-05:00  INFO 9120 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.217 seconds (process running for 7.779)
+2026-04-06T16:09:54.858-05:00  INFO 9120 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T16:09:54.859-05:00  INFO 9120 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T16:09:54.860-05:00  INFO 9120 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-06T16:09:55.323-05:00  WARN 9120 --- [TechCup] [http-nio-8080-exec-1] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T16:09:57.478-05:00  WARN 9120 --- [TechCup] [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T16:12:05.499-05:00  INFO 9120 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:12:05.582-05:00  INFO 9120 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T16:12:05.625-05:00  INFO 9120 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T16:12:26.574-05:00  INFO 16488 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 16488 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T16:12:26.577-05:00  INFO 16488 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T16:12:28.080-05:00  INFO 16488 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T16:12:28.253-05:00  INFO 16488 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 7 JPA repository interfaces.
+2026-04-06T16:12:29.211-05:00  INFO 16488 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T16:12:29.230-05:00  INFO 16488 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T16:12:29.230-05:00  INFO 16488 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T16:12:29.319-05:00  INFO 16488 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T16:12:29.320-05:00  INFO 16488 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2658 ms
+2026-04-06T16:12:29.517-05:00  INFO 16488 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T16:12:29.602-05:00  INFO 16488 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T16:12:29.649-05:00  INFO 16488 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T16:12:29.944-05:00  INFO 16488 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T16:12:29.986-05:00  INFO 16488 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T16:12:30.233-05:00  INFO 16488 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35dcd032
+2026-04-06T16:12:30.235-05:00  INFO 16488 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T16:12:30.307-05:00  WARN 16488 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T16:12:31.737-05:00  INFO 16488 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T16:12:32.082-05:00  INFO 16488 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:12:32.645-05:00  WARN 16488 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T16:12:33.171-05:00  INFO 16488 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e86b2d1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65029fc, org.springframework.security.web.context.SecurityContextHolderFilter@7a085d02, org.springframework.security.web.header.HeaderWriterFilter@1b2e841, org.springframework.web.filter.CorsFilter@4865434e, org.springframework.security.web.authentication.logout.LogoutFilter@7e92e9a2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5e97da56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7842260f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cb4d4ee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c6e407, org.springframework.security.web.access.ExceptionTranslationFilter@1db9d253, org.springframework.security.web.access.intercept.AuthorizationFilter@443b9ebb]
+2026-04-06T16:12:33.558-05:00  INFO 16488 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T16:12:33.568-05:00  INFO 16488 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.489 seconds (process running for 7.911)
+2026-04-06T16:12:41.085-05:00  INFO 16488 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T16:12:41.086-05:00  INFO 16488 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T16:12:41.092-05:00  INFO 16488 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-06T16:12:41.710-05:00  WARN 16488 --- [TechCup] [http-nio-8080-exec-1] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-06T16:14:24.947-05:00  INFO 16488 --- [TechCup] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:14:25.023-05:00  INFO 16488 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-06T16:14:25.064-05:00  INFO 16488 --- [TechCup] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-06T16:14:49.073-05:00  INFO 1220 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 1220 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T16:14:49.077-05:00  INFO 1220 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T16:14:50.378-05:00  INFO 1220 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T16:14:50.496-05:00  INFO 1220 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 7 JPA repository interfaces.
+2026-04-06T16:14:51.229-05:00  INFO 1220 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T16:14:51.246-05:00  INFO 1220 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T16:14:51.246-05:00  INFO 1220 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T16:14:51.328-05:00  INFO 1220 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T16:14:51.329-05:00  INFO 1220 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2167 ms
+2026-04-06T16:14:51.527-05:00  INFO 1220 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T16:14:51.608-05:00  INFO 1220 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T16:14:51.652-05:00  INFO 1220 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T16:14:51.929-05:00  INFO 1220 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T16:14:51.972-05:00  INFO 1220 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T16:14:52.214-05:00  INFO 1220 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37c2f0b4
+2026-04-06T16:14:52.216-05:00  INFO 1220 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T16:14:52.278-05:00  WARN 1220 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T16:14:53.755-05:00  INFO 1220 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T16:14:54.057-05:00  INFO 1220 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:14:54.671-05:00  WARN 1220 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T16:14:55.044-05:00  INFO 1220 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4865434e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c6e407, org.springframework.security.web.context.SecurityContextHolderFilter@7842260f, org.springframework.security.web.header.HeaderWriterFilter@698daff6, org.springframework.web.filter.CorsFilter@287dde94, org.springframework.security.web.authentication.logout.LogoutFilter@65cf8da0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6cfe32cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44ec6637, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a0b550a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f650dae, org.springframework.security.web.access.ExceptionTranslationFilter@1b2e841, org.springframework.security.web.access.intercept.AuthorizationFilter@d98ce13]
+2026-04-06T16:14:55.397-05:00  INFO 1220 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T16:14:55.409-05:00  INFO 1220 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 7.019 seconds (process running for 7.61)
+2026-04-06T16:15:24.656-05:00  INFO 1220 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T16:15:24.662-05:00  INFO 1220 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T16:15:24.668-05:00  INFO 1220 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-04-06T16:15:24.880-05:00 ERROR 1220 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:289) ~[spring-security-crypto-6.2.4.jar:6.2.4]
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:237) ~[spring-security-crypto-6.2.4.jar:6.2.4]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:147) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:187) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-04-06T16:15:25.171-05:00  WARN 1220 --- [TechCup] [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [163] milliseconds.
+2026-04-06T16:15:37.960-05:00 ERROR 1220 --- [TechCup] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:289) ~[spring-security-crypto-6.2.4.jar:6.2.4]
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:237) ~[spring-security-crypto-6.2.4.jar:6.2.4]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:147) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:187) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-04-06T16:20:22.596-05:00  INFO 12468 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Starting TechCupApplication using Java 25 with PID 12468 (C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE\target\classes started by maria in C:\Users\maria\OneDrive\Escritorio\universidad\quintoSemestre\DOWS\DOSW_Lab7_LXJJE)
+2026-04-06T16:20:22.599-05:00  INFO 12468 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : The following 1 profile is active: "prod"
+2026-04-06T16:20:24.216-05:00  INFO 12468 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T16:20:24.372-05:00  INFO 12468 --- [TechCup] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 7 JPA repository interfaces.
+2026-04-06T16:20:25.432-05:00  INFO 12468 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-06T16:20:25.511-05:00  INFO 12468 --- [TechCup] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-06T16:20:25.514-05:00  INFO 12468 --- [TechCup] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-06T16:20:25.780-05:00  INFO 12468 --- [TechCup] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-06T16:20:25.782-05:00  INFO 12468 --- [TechCup] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3092 ms
+2026-04-06T16:20:26.237-05:00  INFO 12468 --- [TechCup] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T16:20:26.366-05:00  INFO 12468 --- [TechCup] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-06T16:20:26.435-05:00  INFO 12468 --- [TechCup] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T16:20:26.847-05:00  INFO 12468 --- [TechCup] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T16:20:26.904-05:00  INFO 12468 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T16:20:27.344-05:00  INFO 12468 --- [TechCup] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3375b118
+2026-04-06T16:20:27.346-05:00  INFO 12468 --- [TechCup] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T16:20:27.441-05:00  WARN 12468 --- [TechCup] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T16:20:30.106-05:00  INFO 12468 --- [TechCup] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-06T16:20:30.566-05:00  INFO 12468 --- [TechCup] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T16:20:31.501-05:00  WARN 12468 --- [TechCup] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T16:20:32.017-05:00  INFO 12468 --- [TechCup] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e8f3b76, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cfe32cd, org.springframework.security.web.context.SecurityContextHolderFilter@280e4390, org.springframework.security.web.header.HeaderWriterFilter@701c413, org.springframework.web.filter.CorsFilter@5f14eb51, org.springframework.security.web.authentication.logout.LogoutFilter@6f9e6a85, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7894a250, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3df7e309, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55f4ec04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f31cf8f, org.springframework.security.web.access.ExceptionTranslationFilter@436103b1, org.springframework.security.web.access.intercept.AuthorizationFilter@7a0f1f9d]
+2026-04-06T16:20:32.475-05:00  INFO 12468 --- [TechCup] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-06T16:20:32.488-05:00  INFO 12468 --- [TechCup] [main] e.eci.dosw.TechCup.TechCupApplication    : Started TechCupApplication in 10.575 seconds (process running for 11.041)
+2026-04-06T16:20:42.663-05:00  INFO 12468 --- [TechCup] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-06T16:20:42.663-05:00  INFO 12468 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-06T16:20:42.664-05:00  INFO 12468 --- [TechCup] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-04-06T16:20:42.744-05:00  INFO 12468 --- [TechCup] [http-nio-8080-exec-1] e.e.d.TechCup.service.UserServiceProd    : Obteniendo todos los usuarios

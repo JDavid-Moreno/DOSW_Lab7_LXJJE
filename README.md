@@ -220,8 +220,13 @@ Se realizó el GET de usuarios de la Base de datos, obtieniendo como respuesto 2
 la lista de los usuarios actualmente.
 ![PostmanUsers.png](src/main/resources/docs/images/PostmanUsers.png)
 
-
-
+### Seguridad
+Se agregó la dependencia y se ejecutó.
+![addDependency.png](src/main/resources/docs/images/addDependency.png)
+Se realizó el login con la contraseña generada en el CMD.
+![SecurityPostman.png](src/main/resources/docs/images/SecurityPostman.png)
+Se personalizó las credenciales.
+![credencialesPersonalizadas.png](src/main/resources/docs/images/credencialesPersonalizadas.png)
 ---
 ## Bibliografía
 

@@ -215,6 +215,13 @@ Las pruebas funcionan correctamente y se ejecutan desde H2.
 ### H2 Confirmation
 ![H2Execution](src/main/resources/docs/images/H2Execution.png)
 
+### Postman
+Se realizó el GET de usuarios de la Base de datos, obtieniendo como respuesto 200 OK y 
+la lista de los usuarios actualmente.
+![PostmanUsers.png](src/main/resources/docs/images/PostmanUsers.png)
+
+
+
 ---
 ## Bibliografía
 

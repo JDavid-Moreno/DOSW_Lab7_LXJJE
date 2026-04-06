@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import java.util.List;
 
 @RestController
 @RequestMapping("/users")
@@ -38,6 +39,11 @@ public class UserController {
     public ResponseEntity<User> updateState(@PathVariable Long id, @RequestBody UserState state){
         userService.updateState(id,state);
         return ResponseEntity.noContent().build();
+    }
+    @GetMapping
+    @Operation(summary = "Obtener todos los usuarios")
+    public ResponseEntity<List<User>> getAll() {
+        return ResponseEntity.ok(userService.getAllUsers());
     }
 
 }

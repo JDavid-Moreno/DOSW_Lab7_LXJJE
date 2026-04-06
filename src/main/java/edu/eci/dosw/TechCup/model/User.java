@@ -46,6 +46,26 @@ public class User {
         this.identification = identificacion;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public void setIdentification(String identification) {
+        this.identification = identification;
+    }
+    public void setIdentificationType(IdentificationType identificationType) {
+        this.identificationType = identificationType;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+    public void setProgram(Program program) {
+        this.program = program;
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }

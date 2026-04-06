@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -96,5 +97,13 @@ public class UserServiceProd implements UserService {
                     "User does not exist");
 
         }
+    }
+    @Transactional
+    public List<User>getAllUsers(){
+        log.info("Obteniendo todos los usuarios");
+        return userRepository.findAll()
+                .stream()
+                .map(userMapper::toModel)
+                .toList();
     }
 }

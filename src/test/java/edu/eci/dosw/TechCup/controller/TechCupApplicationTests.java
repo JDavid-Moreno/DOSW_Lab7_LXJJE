@@ -13,6 +13,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -32,7 +33,7 @@ class TechCupApplicationTests {
 	@Test
 	void testUserCreation()
 	{
-		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
+		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", new HashSet<>(),LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
 		u.setIdentifiacion(IdentificationType.CC, "123456789");
 		assertEquals("Roa Hernandez", u.getLastName());
 		assertEquals("Juan David", u.getName());

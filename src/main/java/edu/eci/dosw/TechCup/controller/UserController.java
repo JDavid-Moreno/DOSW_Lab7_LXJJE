@@ -27,13 +27,13 @@ public class UserController {
         Optional<User> user = userService.searchUserById(id);
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
-    @PostMapping("/{id}/rol")
+    @PostMapping(value = "/{id}/rol", params = "roleId")
     @Operation(summary = "Añadir rol por id", description = "Solo el administrador puede cambiar el rol de un usuario")
     public ResponseEntity<User> addRole(@PathVariable Long id, @RequestBody Long roleId){
         User user = userService.addRole(id, roleId);
         return ResponseEntity.ok(user);
     }
-    @PostMapping("/{id}/rol")
+    @PostMapping(value = "/{id}/rol", params = "roleName")
     @Operation(summary = "Añadir rol nombre", description = "Solo el administrador puede cambiar el rol de un usuario")
     public ResponseEntity<User> addRole(@PathVariable Long id, @RequestBody String roleName){
         User user = userService.addRole(id, roleName);

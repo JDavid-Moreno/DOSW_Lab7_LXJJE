@@ -43,11 +43,10 @@ public class AuthenticationController {
         return ResponseEntity.ok(created);
     }
 
-    @PostMapping("/login")
+    @PostMapping(value = "/login", produces = "application/json")
     @Operation(summary = "Iniciar sesión", description = "Autentica un usuario y devuelve un JWT")
     // UsernamePasswordAuthenticationToken sirve para representar una autenticación basada en usuario y contraseña dentro de Spring Security.
     public ResponseEntity<AuthResponse> login(@RequestBody AuthRequest request) {
-
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.getEmail(),

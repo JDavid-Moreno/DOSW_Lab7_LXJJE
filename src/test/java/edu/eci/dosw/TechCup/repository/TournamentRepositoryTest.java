@@ -10,6 +10,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -29,7 +30,7 @@ class TournamentRepositoryTest {
     void shouldUpdateAndDeleteTournament() {
         // Preparar un organizador para el torneo (requerido en tu entidad)
         UserEntity organizer = new UserEntity("org@mail.com", "123", "Org", "Test", LocalDate.now(), Program.INGENIERIA_SISTEMAS);
-        organizer.setRoles(Role.ADMINISTRADOR);
+        organizer.setRoles(new HashSet<>());
         organizer.setIdentifiacion(IdentificationType.CC, "5555");
         userRepository.save(organizer);
 

@@ -23,7 +23,6 @@ public class UserEntity {
     private String name;
     @Column(length = 50)
     private String lastName;
-    @Column(nullable = false)
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "users_roles",

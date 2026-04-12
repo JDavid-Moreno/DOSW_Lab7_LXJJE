@@ -227,7 +227,10 @@ Se realizó el login con la contraseña generada en el CMD.
 ![SecurityPostman.png](src/main/resources/docs/images/SecurityPostman.png)
 Se personalizó las credenciales.
 ![credencialesPersonalizadas.png](src/main/resources/docs/images/credencialesPersonalizadas.png)
----
+
+### Autenticación con JWT
+Prueba configuración jwt en postman, si se devuelve un token para un usuario registrado.
+![PruebaPostmanToken](src/main/resources/docs/images/PruebaPostmanToken.png)
 ## Bibliografía
 
 Pivotal Software. (2023). Spring Boot Reference Documentation. Recuperado de https://spring.io

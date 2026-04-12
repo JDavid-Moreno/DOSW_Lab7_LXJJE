@@ -2,6 +2,7 @@ package edu.eci.dosw.TechCup.service;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -9,9 +10,10 @@ import javax.crypto.SecretKey;
 import java.util.Date;
 
 @Service
+@Profile("prod")
 public class JwtService {
 
-    private final String SECRET = "techcup2026";
+    private final String SECRET = "techcup-2026-1-DOSW-LXJJE-JWT-KEY-SECRET";
 
     private SecretKey getSignKey() {
         return Keys.hmacShaKeyFor(SECRET.getBytes());

@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 public class UserEntity {
@@ -24,7 +25,7 @@ public class UserEntity {
     private String lastName;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Role role;
+    private Set<Role> roles;
     private LocalDate birthDate;
     @Enumerated(EnumType.STRING)
     private Gender gender;
@@ -86,11 +87,11 @@ public class UserEntity {
     public String getLastName() {
         return lastName;
     }
-    public Role getRole() {
-        return role;
+    public Set<Role> getRoles() {
+        return roles;
     }
-    public void setRole(Role role) {
-        this.role = role;
+    public void setRole(Set<Role> roles) {
+        this.roles = roles;
     }
     public LocalDate getBirthDate() {
         return birthDate;

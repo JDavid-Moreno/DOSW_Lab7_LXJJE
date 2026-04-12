@@ -1,9 +1,8 @@
 package edu.eci.dosw.TechCup.model;
 
-import jakarta.persistence.*;
-
 
 import java.time.LocalDate;
+import java.util.Set;
 
 public class User {
     private Long id;
@@ -11,7 +10,7 @@ public class User {
     private String password;
     private String name;
     private String lastName;
-    private Role role;
+    private Set<Role> roles;
     private LocalDate birthDate;
     private Gender gender;
     private Integer semester;
@@ -23,11 +22,12 @@ public class User {
     private File profilePicture;
     private UserState state;
     public User() {}
-    public User(String correo, String passwdCifrado, String nombres, String apellidos, LocalDate birthDate, Program program) {
+    public User(String correo, String passwdCifrado, String nombres, String apellidos, Set<Role> roles, LocalDate birthDate, Program program) {
         this.email = correo;
         this.password = passwdCifrado;
         this.name = nombres;
         this.lastName = apellidos;
+        this.roles = roles;
         this.birthDate = birthDate;
         this.program = program;
         this.state = UserState.ACTIVE;
@@ -81,15 +81,13 @@ public class User {
     public String getLastName() {
         return lastName;
     }
-    public Role getRole() {
-        return role;
+    public Set<Role> getRoles() {
+        return roles;
     }
-    public void setRole(Role role) {
-        this.role = role;
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
+    public LocalDate getBirthDate() {return birthDate;}
     public Gender getGender() {
         return gender;
     }

@@ -9,6 +9,10 @@ import edu.eci.dosw.TechCup.repository.UserRepository;
 import edu.eci.dosw.TechCup.exception.AuthenticationException;
 
 import org.springframework.context.annotation.Profile;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,7 +24,7 @@ import org.slf4j.LoggerFactory;
 
 @Service
 @Profile("prod")
-public class UserServiceProd implements UserService {
+public class UserServiceProd implements UserService, UserDetailsService {
 
     private final UserRepository userRepository;
     private final UserMapper userMapper;
@@ -105,5 +109,17 @@ public class UserServiceProd implements UserService {
                 .stream()
                 .map(userMapper::toModel)
                 .toList();
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        User user = findByEmail(email);
+        return new org.springframework.security.core.userdetails.User(
+                user.getEmail(),
+                user.getPassword(),
+                user.getRoles().stream()
+                        .map(role -> new SimpleGrantedAuthority(role.getName()))
+                        .toList()
+        );
     }
 }

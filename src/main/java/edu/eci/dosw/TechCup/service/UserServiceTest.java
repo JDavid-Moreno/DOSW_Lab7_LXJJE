@@ -5,13 +5,11 @@ import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.List;
 import java.util.ArrayList;
 
 @Service
@@ -51,7 +49,7 @@ public class UserServiceTest implements UserService {
     public void updateRole(Long id, Role role) {
         User user = usersById.get(id);
         if (user != null) {
-            user.setRole(role);
+            user.setRoles(role);
         }
     }
 

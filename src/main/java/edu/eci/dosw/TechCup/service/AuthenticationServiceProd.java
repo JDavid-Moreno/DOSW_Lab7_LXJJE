@@ -72,7 +72,7 @@ public class AuthenticationServiceProd
         user.setPassword(
                 encoder.encode(user.getPassword()));
 
-        user.setRole(Role.JUGADOR);
+        user.setRoles(Role.JUGADOR);
         user.setState(UserState.ACTIVE);
 
         UserEntity savedUser =

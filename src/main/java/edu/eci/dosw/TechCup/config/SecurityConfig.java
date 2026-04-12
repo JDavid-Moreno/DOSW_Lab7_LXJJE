@@ -24,6 +24,7 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
     // AuthenticationManager es una interfaz de spring security que se encarga de procesar las autenticaciones de los usuarios. Recibe las credenciales y las valida.
+    @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();
     }

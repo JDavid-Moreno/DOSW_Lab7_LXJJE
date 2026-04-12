@@ -153,6 +153,11 @@ public class UserServiceProd implements UserService, UserDetailsService {
     }
 
     @Override
+    // El objetivo de este método es encontrar un usuario en el respositorio usando su correo electrónico que es una llave unica.
+
+    // UserDetails es una interfaz de spring security que sirve para que esta pueda obtener el username, password y authorities. Más adelante servirá para procesar el jwt
+
+    // SimpleGrantedAuthority es una clase de spring security que sirve para representar un rol o un permiso de un usuario.
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Optional<UserEntity> userEntity = userRepository.findByEmail(email);
         if (userEntity.isEmpty()) {

@@ -29,7 +29,7 @@ class TeamMemberRepositoryTest {
         team = teamRepository.save(team);
 
         UserEntity user = new UserEntity("player@mail.escuelaing.edu.co", "pass", "John", "Doe", LocalDate.now(), Program.IA);
-        user.setRole(Role.JUGADOR);
+        user.setRoles(Role.JUGADOR);
         user.setIdentificationType(IdentificationType.CC);
         user.setIdentification("12345");
         user = userRepository.save(user);

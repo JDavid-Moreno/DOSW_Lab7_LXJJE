@@ -1,6 +1,5 @@
 package edu.eci.dosw.TechCup.service;
 
-import edu.eci.dosw.TechCup.model.Role;
 import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
 import java.util.List;
@@ -12,6 +11,9 @@ public interface UserService {
     Optional<User> searchUserByEmail(String email);
     Optional<User> searchUserById(Long id);
     Optional<User> searchUserByIdentification(String identification);
-    void updateRole(Long id, Role role);
     void updateState(Long id, UserState state);
+    User addRole(Long id, Long roleId);
+    User addRole(Long id, String roleName);
+    void deleteRole(Long id, Long roleId);
+    void deleteRole(Long id, String roleName);
 }

@@ -19,6 +19,9 @@ public class UserServiceTest implements UserService {
     private Map<Long, User> usersById = new HashMap<>();
     private Map<String, User> usersByEmail = new HashMap<>();
     private Map<String, User> usersByIdentification = new HashMap<>();
+    private Map<Long, Role> rolesById = new HashMap<>();
+    private Map<String, Role> rolesByName = new HashMap<>();
+
 
     private Long idCounter = 1L;
 
@@ -46,10 +49,37 @@ public class UserServiceTest implements UserService {
     }
 
     @Override
-    public void updateRole(Long id, Role role) {
+    public User addRole(Long id, Long roleId) {
+        rolesById.put(0L,new Role(0L,"ROL_JUGADOR"));
         User user = usersById.get(id);
         if (user != null) {
-            user.setRoles(role);
+            user.getRoles().add(rolesById.get(roleId));
+        }
+        return user;
+    }
+    @Override
+    public User addRole(Long id, String roleName) {
+        rolesByName.put("ROL_JUGADOR",new Role(0L,"ROL_JUGADOR"));
+        User user = usersById.get(id);
+        if (user != null) {
+            user.getRoles().add(rolesByName.get(roleName));
+        }
+        return user;
+    }
+
+    @Override
+    public void deleteRole(Long id, Long roleId) {
+        User user = usersById.get(id);
+        if (user != null) {
+            user.getRoles().remove(rolesById.get(roleId));
+        }
+    }
+
+    @Override
+    public void deleteRole(Long id, String roleName) {
+        User user = usersById.get(id);
+        if (user != null) {
+            user.getRoles().remove(rolesByName.get(roleName));
         }
     }
 

@@ -5,7 +5,7 @@ import edu.eci.dosw.TechCup.model.User;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring",
-        uses = {FileMapper.class}
+        uses = {FileMapper.class, RoleMapper.class}
 )
 
 public interface UserMapper {

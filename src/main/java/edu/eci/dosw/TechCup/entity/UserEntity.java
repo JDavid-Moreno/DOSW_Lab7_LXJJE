@@ -23,9 +23,14 @@ public class UserEntity {
     private String name;
     @Column(length = 50)
     private String lastName;
-    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Set<Role> roles;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Set<RoleEntity> roles;
     private LocalDate birthDate;
     @Enumerated(EnumType.STRING)
     private Gender gender;
@@ -87,10 +92,10 @@ public class UserEntity {
     public String getLastName() {
         return lastName;
     }
-    public Set<Role> getRoles() {
+    public Set<RoleEntity> getRoles() {
         return roles;
     }
-    public void setRole(Set<Role> roles) {
+    public void setRoles(Set<RoleEntity> roles) {
         this.roles = roles;
     }
     public LocalDate getBirthDate() {

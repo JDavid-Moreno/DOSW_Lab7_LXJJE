@@ -29,7 +29,7 @@ class TournamentRepositoryTest {
     void shouldUpdateAndDeleteTournament() {
         // Preparar un organizador para el torneo (requerido en tu entidad)
         UserEntity organizer = new UserEntity("org@mail.com", "123", "Org", "Test", LocalDate.now(), Program.INGENIERIA_SISTEMAS);
-        organizer.setRole(Role.ADMINISTRADOR);
+        organizer.setRoles(Role.ADMINISTRADOR);
         organizer.setIdentifiacion(IdentificationType.CC, "5555");
         userRepository.save(organizer);
 

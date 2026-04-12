@@ -1,10 +1,12 @@
 package edu.eci.dosw.TechCup.service;
 
+import edu.eci.dosw.TechCup.entity.RoleEntity;
 import edu.eci.dosw.TechCup.entity.UserEntity;
 import edu.eci.dosw.TechCup.mapper.UserMapper;
 import edu.eci.dosw.TechCup.model.Role;
 import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
+import edu.eci.dosw.TechCup.repository.RoleRepository;
 import edu.eci.dosw.TechCup.repository.UserRepository;
 import edu.eci.dosw.TechCup.exception.AuthenticationException;
 
@@ -16,6 +18,8 @@ import org.springframework.transaction.annotation.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Set;
+
 @Service
 @Profile("prod")
 public class AuthenticationServiceProd
@@ -24,6 +28,7 @@ public class AuthenticationServiceProd
     private final PasswordEncoder encoder;
     private final UserRepository userRepository;
     private final UserMapper userMapper;
+    private final RoleRepository roleRepository;
 
     private static final Logger log =
             LoggerFactory.getLogger(AuthenticationServiceProd.class);
@@ -31,11 +36,13 @@ public class AuthenticationServiceProd
     public AuthenticationServiceProd(
             PasswordEncoder encoder,
             UserRepository userRepository,
-            UserMapper userMapper) {
+            UserMapper userMapper,
+            RoleRepository roleRepository) {
 
         this.encoder = encoder;
         this.userRepository = userRepository;
         this.userMapper = userMapper;
+        this.roleRepository = roleRepository;
     }
 
     @Transactional
@@ -61,23 +68,19 @@ public class AuthenticationServiceProd
     @Transactional
     public User register(User user) {
 
-        String email = user.getEmail();
-
-        if (userRepository.existsByEmail(email)) {
-
-            throw new AuthenticationException(
-                    "Email already in use.");
+        if (userRepository.existsByEmail(user.getEmail())) {
+            throw new AuthenticationException("Email already in use.");
         }
 
-        user.setPassword(
-                encoder.encode(user.getPassword()));
+        RoleEntity jugadorRole = roleRepository.findByName("ROLE_JUGADOR")
+                .orElseThrow(() -> new RuntimeException("Default role ROLE_JUGADOR not found"));
 
-        user.setRoles(Role.JUGADOR);
-        user.setState(UserState.ACTIVE);
+        UserEntity userEntity = userMapper.toEntity(user);
+        userEntity.setPassword(encoder.encode(user.getPassword()));
+        userEntity.setState(UserState.ACTIVE);
+        userEntity.setRoles(Set.of(jugadorRole));
 
-        UserEntity savedUser =
-                userRepository.save(
-                        userMapper.toEntity(user));
+        UserEntity savedUser = userRepository.save(userEntity);
 
         return userMapper.toModel(savedUser);
     }

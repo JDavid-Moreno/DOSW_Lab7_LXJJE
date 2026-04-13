@@ -216,14 +216,6 @@ Las pruebas funcionan correctamente y se ejecutan desde H2.
 ![H2Execution](src/main/resources/docs/images/H2Execution.png)
 ---
 
-## Preguntas Filtro JWT
-
-a. Que es un filtro JWT?
-Un filtro JWT (JSON Web Token) es un componente que se usa en el backend como en Spring Boot, esto para interceptar las peticiones HTTP y verificar si el usuario esta autenticado mediante un token 
-
-b. para que sirven los filtros JWT?
-generalmente sirve para evitar accesos no autorizados implementando autenticacion sin sesiones, asi mismo, protege endpoints como /admin o /profile, 
-
 ### Postman
 Se realizó el GET de usuarios de la Base de datos, obtieniendo como respuesto 200 OK y 
 la lista de los usuarios actualmente.
@@ -240,6 +232,15 @@ Se personalizó las credenciales.
 ### Autenticación con JWT
 Prueba configuración jwt en postman, si se devuelve un token para un usuario registrado.
 ![PruebaPostmanToken](src/main/resources/docs/images/PruebaPostmanToken.png)
+
+## Preguntas Filtro JWT
+
+a. Que es un filtro JWT?
+Un filtro JWT (JSON Web Token) es un componente que se usa en el backend como en Spring Boot, esto para interceptar las peticiones HTTP y verificar si el usuario esta autenticado mediante un token 
+
+b. para que sirven los filtros JWT?
+generalmente sirve para evitar accesos no autorizados implementando autenticacion sin sesiones, asi mismo, protege endpoints como /admin o /profile, 
+
 ## Bibliografía
 
 Pivotal Software. (2023). Spring Boot Reference Documentation. Recuperado de https://spring.io

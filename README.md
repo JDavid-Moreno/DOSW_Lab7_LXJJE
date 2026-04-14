@@ -259,6 +259,7 @@ Auth0. (2023). Introduction to JSON Web Tokens. Recuperado de https://auth0.com/
 
 
 ## Miembros
+
 - Luiza Mariana Gonzales Veloza
 
 - Juan David Roa Hernández

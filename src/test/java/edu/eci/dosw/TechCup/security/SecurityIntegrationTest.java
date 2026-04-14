@@ -96,4 +96,23 @@ public class SecurityIntegrationTest {
                 .andExpect(status().isForbidden());
     }
 
+    @Test
+    void accessProtectedSuccess() throws Exception {
+        MvcResult result = mockMvc.perform(post("/auth/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("""
+                        {
+                            "email": "test@test.com",
+                            "password": "123456"
+                        }
+                        """))
+                .andReturn();
+
+        String token = JsonPath.read(result.getResponse().getContentAsString(), "$.token");
+
+        mockMvc.perform(get("/users")
+                .header("Authorization", "Bearer " + token))
+                .andExpect(status().isOk());
+    }
+
 }

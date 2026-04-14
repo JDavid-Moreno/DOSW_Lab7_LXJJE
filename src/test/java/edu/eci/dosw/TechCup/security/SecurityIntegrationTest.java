@@ -52,4 +52,35 @@ public class SecurityIntegrationTest {
     @MockBean
     private UserService userService;
 
+@BeforeEach
+    void setup() throws Exception {
+        UserDetails user = org.springframework.security.core.userdetails.User
+                .withUsername("test@test.com")
+                .password("123456")
+                .authorities("ROLE_USER")
+                .build();
+
+        when(userDetailsService.loadUserByUsername(any())).thenReturn(user);
+        when(jwtService.generateToken(any())).thenReturn("fake-jwt-token");
+        when(jwtService.extractUsername(anyString())).thenReturn("test@test.com");
+        when(authenticationManager.authenticate(
+                argThat(auth -> "wrong".equals(auth.getCredentials()))))
+                .thenThrow(new BadCredentialsException("Bad credentials"));
+        when(userService.getAllUsers()).thenReturn(List.of());
+    }
+
+    @Test
+    void loginSuccess() throws Exception {
+        mockMvc.perform(post("/auth/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("""
+                        {
+                            "email": "test@test.com",
+                            "password": "123456"
+                        }
+                        """))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.token").exists());
+    }
+
 }

@@ -4,11 +4,15 @@ import edu.eci.dosw.TechCup.controller.AuthenticationController;
 import edu.eci.dosw.TechCup.controller.TournamentController;
 import edu.eci.dosw.TechCup.controller.UserController;
 import edu.eci.dosw.TechCup.model.*;
+import edu.eci.dosw.TechCup.service.JwtService;
 import edu.eci.dosw.TechCup.service.UserService;
 import edu.eci.dosw.TechCup.service.UserServiceProd;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
@@ -26,6 +30,16 @@ class TechCupApplicationTests {
 	AuthenticationController authenticationController;
 	@Autowired
 	TournamentController tournamentController;
+
+	@MockBean
+	private UserDetailsService userDetailsService;
+
+	@MockBean
+	private JwtService jwtService;
+
+	@MockBean
+	private AuthenticationManager authenticationManager;
+
 
 	@Test
 	void contextLoads() {

@@ -56,11 +56,14 @@ class UserControllerTest {
 
     @Test
     void shouldAddUserRole() {
-        doNothing().when(userService).addRole(1L, 0L);
+        User user = new User();
+
+        when(userService.addRole(1L, 0L)).thenReturn(user);
 
         ResponseEntity<User> response = controller.addRole(1L, 0L);
 
-        assertEquals(204, response.getStatusCodeValue());
+        assertEquals(200, response.getStatusCodeValue());
+        assertEquals(user, response.getBody());
         verify(userService, times(1)).addRole(1L, 0L);
     }
 

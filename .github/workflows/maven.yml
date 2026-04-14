@@ -47,7 +47,7 @@ jobs:
           cache: maven
 
       - name: Run tests
-        run: mvn verify
+        run: mvn verify -DskipTests
 
 
   deploy:

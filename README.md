@@ -216,6 +216,10 @@ Las pruebas funcionan correctamente y se ejecutan desde H2.
 ![H2Execution](src/main/resources/docs/images/H2Execution.png)
 ---
 
+### ER Diagram
+
+![New ER Diagram](src/main/resources/docs/images/ER_Diagram.png)
+
 ### Postman
 Se realizó el GET de usuarios de la Base de datos, obtieniendo como respuesto 200 OK y 
 la lista de los usuarios actualmente.

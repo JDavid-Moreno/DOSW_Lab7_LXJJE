@@ -268,5 +268,5 @@ Auth0. (2023). Introduction to JSON Web Tokens. Recuperado de https://auth0.com/
 
 - Karol Ximena Rodriguez Reyes
 
-- Eduardo Rico Duarte.
+- Eduardo Rico Duarte
 

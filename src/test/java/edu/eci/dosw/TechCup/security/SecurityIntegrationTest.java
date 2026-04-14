@@ -83,4 +83,17 @@ public class SecurityIntegrationTest {
                 .andExpect(jsonPath("$.token").exists());
     }
 
+    @Test
+    void loginFail() throws Exception {
+        mockMvc.perform(post("/auth/login")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("""
+                        {
+                            "email": "test@test.com",
+                            "password": "wrong"
+                        }
+                        """))
+                .andExpect(status().isForbidden());
+    }
+
 }

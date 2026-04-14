@@ -1,4 +1,4 @@
-package edu.eci.dosw.TechCup.config;
+package edu.eci.dosw.TechCup.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

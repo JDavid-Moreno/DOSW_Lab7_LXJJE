@@ -10,7 +10,6 @@ import javax.crypto.SecretKey;
 import java.util.Date;
 
 @Service
-@Profile("prod")
 public class JwtService {
 
     private final String SECRET = "techcup-2026-1-DOSW-LXJJE-JWT-KEY-SECRET";

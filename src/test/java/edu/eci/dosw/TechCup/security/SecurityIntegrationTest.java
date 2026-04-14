@@ -115,4 +115,9 @@ public class SecurityIntegrationTest {
                 .andExpect(status().isOk());
     }
 
+    @Test
+    void accessProtectedFail() throws Exception {
+        mockMvc.perform(get("/users"))
+                .andExpect(status().isForbidden());
+    }
 }

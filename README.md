@@ -245,6 +245,20 @@ Un filtro JWT (JSON Web Token) es un componente que se usa en el backend como en
 b. para que sirven los filtros JWT?
 generalmente sirve para evitar accesos no autorizados implementando autenticacion sin sesiones, asi mismo, protege endpoints como /admin o /profile, 
 
+---
+
+### Pruebas de Integracion
+
+Para ejecutar solamente las pruebas de integración de esta sección con el fin de observar correctamente su resultado, corremos el siguiente comando:
+
+```bash
+mvn test -Dtest=SecurityIntegrationTest
+```
+
+Y obtenemos el siguiente resultado:
+
+![Security Test](src/main/resources/docs/images/SecurityTest.png)
+
 ## Bibliografía
 
 Pivotal Software. (2023). Spring Boot Reference Documentation. Recuperado de https://spring.io
@@ -259,6 +273,7 @@ Auth0. (2023). Introduction to JSON Web Tokens. Recuperado de https://auth0.com/
 
 
 ## Miembros
+
 - Luiza Mariana Gonzales Veloza
 
 - Juan David Roa Hernández

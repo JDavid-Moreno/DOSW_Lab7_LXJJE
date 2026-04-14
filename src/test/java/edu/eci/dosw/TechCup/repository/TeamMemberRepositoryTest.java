@@ -33,7 +33,8 @@ class TeamMemberRepositoryTest {
         Set<RoleEntity> roles = new HashSet<>();
         roles.add(new RoleEntity());
 
-        UserEntity user = new UserEntity("player@mail.escuelaing.edu.co", "pass", "John", "Doe", LocalDate.now(), Program.IA);
+        UserEntity user = new UserEntity("player@mail.escuelaing.edu.co", 
+        "pass", "John", "Doe", LocalDate.now(), Program.IA);
         user.setRoles(roles);
         user.setIdentificationType(IdentificationType.CC);
         user.setIdentification("12345");

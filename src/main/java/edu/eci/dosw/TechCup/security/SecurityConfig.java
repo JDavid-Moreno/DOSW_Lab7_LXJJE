@@ -17,6 +17,13 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 // EnableWebSecurity es una notación de spring security que permite la configuración de seguridad web
 
 public class SecurityConfig {
+
+    private final JwtAuthenticationFilter jwtAuthenticationFilter;
+
+    public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter) {
+        this.jwtAuthenticationFilter = jwtAuthenticationFilter;
+    }
+
     // Password encoder es una interfaz de spring security que se usa para cifrar contraseñas y verificarlas.
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -40,9 +47,9 @@ public class SecurityConfig {
                                 "/auth/**"
                         ).permitAll()
                         .anyRequest().authenticated()
-                );
+                )
+                .addFilterBefore(jwtAuthenticationFilter,
+                        org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
-
-
 }

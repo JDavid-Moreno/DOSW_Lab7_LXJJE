@@ -4,15 +4,20 @@ import edu.eci.dosw.TechCup.controller.AuthenticationController;
 import edu.eci.dosw.TechCup.controller.TournamentController;
 import edu.eci.dosw.TechCup.controller.UserController;
 import edu.eci.dosw.TechCup.model.*;
+import edu.eci.dosw.TechCup.service.JwtService;
 import edu.eci.dosw.TechCup.service.UserService;
 import edu.eci.dosw.TechCup.service.UserServiceProd;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -26,13 +31,23 @@ class TechCupApplicationTests {
 	@Autowired
 	TournamentController tournamentController;
 
+	@MockBean
+	private UserDetailsService userDetailsService;
+
+	@MockBean
+	private JwtService jwtService;
+
+	@MockBean
+	private AuthenticationManager authenticationManager;
+
+
 	@Test
 	void contextLoads() {
 	}
 	@Test
 	void testUserCreation()
 	{
-		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
+		User u = new User("juan.roa-h@mail.escuelaing.edu.co","passwordcifrado123","Juan David", "Roa Hernandez", new HashSet<>(),LocalDate.of(2005,3,22), Program.INGENIERIA_SISTEMAS);
 		u.setIdentifiacion(IdentificationType.CC, "123456789");
 		assertEquals("Roa Hernandez", u.getLastName());
 		assertEquals("Juan David", u.getName());

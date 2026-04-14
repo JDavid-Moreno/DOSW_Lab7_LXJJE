@@ -214,8 +214,51 @@ Las pruebas funcionan correctamente y se ejecutan desde H2.
 
 ### H2 Confirmation
 ![H2Execution](src/main/resources/docs/images/H2Execution.png)
+---
+
+### ER Diagram
+
+![New ER Diagram](src/main/resources/docs/images/ER_Diagram.png)
+
+### Postman
+Se realizó el GET de usuarios de la Base de datos, obtieniendo como respuesto 200 OK y 
+la lista de los usuarios actualmente.
+![PostmanUsers.png](src/main/resources/docs/images/PostmanUsers.png)
+
+### Seguridad
+Se agregó la dependencia y se ejecutó.
+![addDependency.png](src/main/resources/docs/images/addDependency.png)
+Se realizó el login con la contraseña generada en el CMD.
+![SecurityPostman.png](src/main/resources/docs/images/SecurityPostman.png)
+Se personalizó las credenciales.
+![credencialesPersonalizadas.png](src/main/resources/docs/images/credencialesPersonalizadas.png)
+
+### Autenticación con JWT
+Prueba configuración jwt en postman, si se devuelve un token para un usuario registrado.
+![PruebaPostmanToken](src/main/resources/docs/images/PruebaPostmanToken.png)
+
+## Preguntas Filtro JWT
+
+a. Que es un filtro JWT?
+Un filtro JWT (JSON Web Token) es un componente que se usa en el backend como en Spring Boot, esto para interceptar las peticiones HTTP y verificar si el usuario esta autenticado mediante un token 
+
+b. para que sirven los filtros JWT?
+generalmente sirve para evitar accesos no autorizados implementando autenticacion sin sesiones, asi mismo, protege endpoints como /admin o /profile, 
 
 ---
+
+### Pruebas de Integracion
+
+Para ejecutar solamente las pruebas de integración de esta sección con el fin de observar correctamente su resultado, corremos el siguiente comando:
+
+```bash
+mvn test -Dtest=SecurityIntegrationTest
+```
+
+Y obtenemos el siguiente resultado:
+
+![Security Test](src/main/resources/docs/images/SecurityTest.png)
+
 ## Bibliografía
 
 Pivotal Software. (2023). Spring Boot Reference Documentation. Recuperado de https://spring.io
@@ -224,9 +267,13 @@ Baeldung. (2024). Guía de Spring Boot. Recuperado de https://www.baeldung.com
 
 Oracle. (2023). Documentación oficial de Java. Recuperado de https://docs.oracle.com
 
+Internet Engineering Task Force. (2015). JSON Web Token (JWT) (RFC 7519). Recuperado de https://datatracker.ietf.org/doc/html/rfc7519
+
+Auth0. (2023). Introduction to JSON Web Tokens. Recuperado de https://auth0.com/learn/json-web-tokens/
 
 
 ## Miembros
+
 - Luiza Mariana Gonzales Veloza
 
 - Juan David Roa Hernández

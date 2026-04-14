@@ -10,6 +10,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -26,7 +27,7 @@ class UserRepositoryTest {
     @DisplayName("Punto 1: Debe guardar un usuario correctamente")
     void shouldSaveUser() {
         UserEntity user = new UserEntity("prueba@mail.escuelaing.edu.co", "pass123", "Juan", "Perez", LocalDate.now(), Program.INGENIERIA_SISTEMAS);
-        user.setRole(Role.JUGADOR);
+        user.setRoles(new HashSet<>());
         user.setIdentifiacion(IdentificationType.CC, "12345678");
         
         UserEntity savedUser = userRepository.save(user);
@@ -39,7 +40,7 @@ class UserRepositoryTest {
     @DisplayName("Punto 2: Debe buscar un usuario por email (Consulta)")
     void shouldFindUserByEmail() {
         UserEntity user = new UserEntity("busqueda@mail.escuelaing.edu.co", "pass", "Ana", "Gomez", LocalDate.now(), Program.INGENIERIA_SISTEMAS);
-        user.setRole(Role.JUGADOR);
+        user.setRoles(new HashSet<>());
         user.setIdentifiacion(IdentificationType.CC, "987654");
         userRepository.save(user);
 

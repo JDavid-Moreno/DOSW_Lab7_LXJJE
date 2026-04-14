@@ -1,6 +1,5 @@
 package edu.eci.dosw.TechCup.controller;
 
-import edu.eci.dosw.TechCup.model.Role;
 import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
 import edu.eci.dosw.TechCup.service.UserService;
@@ -9,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import java.util.List;
 
 @RestController
 @RequestMapping("/users")
@@ -27,10 +27,28 @@ public class UserController {
         Optional<User> user = userService.searchUserById(id);
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
-    @PutMapping("/{id}/role")
-    @Operation(summary = "Actualizar rol", description = "Solo el administrador puede cambiar el rol de un usuario")
-    public ResponseEntity<User> updateRole(@PathVariable Long id, @RequestBody Role role){
-        userService.updateRole(id, role);
+    @PostMapping(value = "/{id}/rol", params = "roleId")
+    @Operation(summary = "Añadir rol por id", description = "Solo el administrador puede cambiar el rol de un usuario")
+    public ResponseEntity<User> addRole(@PathVariable Long id, @RequestBody Long roleId){
+        User user = userService.addRole(id, roleId);
+        return ResponseEntity.ok(user);
+    }
+    @PostMapping(value = "/{id}/rol", params = "roleName")
+    @Operation(summary = "Añadir rol nombre", description = "Solo el administrador puede cambiar el rol de un usuario")
+    public ResponseEntity<User> addRole(@PathVariable Long id, @RequestBody String roleName){
+        User user = userService.addRole(id, roleName);
+        return ResponseEntity.ok(user);
+    }
+    @DeleteMapping("/{id}/rol/{roleId}")
+    @Operation(summary = "Eliminar rol por id", description = "Solo el administrador puede eliminar el rol de un usuario")
+    public ResponseEntity<Void> removeRole(@PathVariable Long id, @PathVariable Long roleId){
+        userService.deleteRole(id, roleId);
+        return ResponseEntity.noContent().build();
+    }
+    @DeleteMapping("/{id}/rol/{roleName}")
+    @Operation(summary = "Eliminar rol por nombre", description = "Solo el administrador puede eliminar el rol de un usuario")
+    public ResponseEntity<Void> removeRole(@PathVariable Long id, @PathVariable String roleName){
+        userService.deleteRole(id, roleName);
         return ResponseEntity.noContent().build();
     }
     @PutMapping("{id}/state")
@@ -38,6 +56,11 @@ public class UserController {
     public ResponseEntity<User> updateState(@PathVariable Long id, @RequestBody UserState state){
         userService.updateState(id,state);
         return ResponseEntity.noContent().build();
+    }
+    @GetMapping
+    @Operation(summary = "Obtener todos los usuarios")
+    public ResponseEntity<List<User>> getAll() {
+        return ResponseEntity.ok(userService.getAllUsers());
     }
 
 }

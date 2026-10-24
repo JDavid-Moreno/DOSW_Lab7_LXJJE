@@ -1,6 +1,5 @@
 package edu.eci.dosw.TechCup.controller;
 
-import edu.eci.dosw.TechCup.controller.UserController;
 import edu.eci.dosw.TechCup.model.Role;
 import edu.eci.dosw.TechCup.model.User;
 import edu.eci.dosw.TechCup.model.UserState;
@@ -56,15 +55,16 @@ class UserControllerTest {
     }
 
     @Test
-    void shouldUpdateUserRole() {
-        Role role = Role.ADMINISTRADOR; 
+    void shouldAddUserRole() {
+        User user = new User();
 
-        doNothing().when(userService).updateRole(1L, role);
+        when(userService.addRole(1L, 0L)).thenReturn(user);
 
-        ResponseEntity<User> response = controller.updateRole(1L, role);
+        ResponseEntity<User> response = controller.addRole(1L, 0L);
 
-        assertEquals(204, response.getStatusCodeValue());
-        verify(userService, times(1)).updateRole(1L, role);
+        assertEquals(200, response.getStatusCodeValue());
+        assertEquals(user, response.getBody());
+        verify(userService, times(1)).addRole(1L, 0L);
     }
 
     @Test

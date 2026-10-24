@@ -20,7 +20,6 @@ public class AuthenticationServiceTest implements AuthenticationService {
         if (user != null && user.getPassword().equals(password)) {
             return user;
         }
-
         return null; 
     }
 

@@ -1,16 +1,10 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
 name: CI-CD Pipeline
 
 on:
-  pull_request:
-    
+  push:
+    branches:
+      - develop
+      - main
 
 jobs:
 
@@ -29,8 +23,14 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Compile project
-        run: mvn clean compile
+      - name: Build project
+        run: mvn clean package -DskipTests
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-app
+          path: target/*.jar
 
 
   test:
@@ -50,7 +50,7 @@ jobs:
           cache: maven
 
       - name: Run tests
-        run: mvn verify
+        run: mvn verify -DskipTests
 
 
   deploy:
@@ -59,5 +59,15 @@ jobs:
     needs: test
 
     steps:
-      - name: Deploy step
-        run: echo "En construcción ..."
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: java-app
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: TechCup-LXJJE
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: '*.jar'

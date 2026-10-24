@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ActiveProfiles;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
@@ -27,9 +30,12 @@ class TeamMemberRepositoryTest {
         TeamEntity team = new TeamEntity();
         team.setName("Eagles");
         team = teamRepository.save(team);
+        Set<RoleEntity> roles = new HashSet<>();
+        roles.add(new RoleEntity());
 
-        UserEntity user = new UserEntity("player@mail.escuelaing.edu.co", "pass", "John", "Doe", LocalDate.now(), Program.IA);
-        user.setRole(Role.JUGADOR);
+        UserEntity user = new UserEntity("player@mail.escuelaing.edu.co", 
+        "pass", "John", "Doe", LocalDate.now(), Program.IA);
+        user.setRoles(roles);
         user.setIdentificationType(IdentificationType.CC);
         user.setIdentification("12345");
         user = userRepository.save(user);
